@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wytyczne i ściągi do opisów produktów</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-title">Spis Treści</div>
+        <ul class="nav-links">
+            <li><a href="#zalozenia-ogolne"><span class="numeracja">1.</span> Założenia ogólne</a>
+                <ul class="list-unstyled ml-3 mb-0">
+                    <li><a href="#naglowek"><span class="numeracja">1.1.</span> Nagłówek</a></li>
+                    <li><a href="#fakty"><span class="numeracja">1.2.</span> Fakty i konkrety</a></li>
+                    <li><a href="#pytodp"><span class="numeracja">1.3.</span> Pytanie + odp</a></li>
+                    <li><a href="#listy"><span class="numeracja">1.4.</span> Listy</a></li>
+                    <li><a href="#tabelki"><span class="numeracja">1.5.</span> Tabelki</a></li>
+                    <li><a href="#obrazki"><span class="numeracja">1.6.</span> Obrazy</a></li>
+                    <li><a href="#liczby"><span class="numeracja">1.7.</span> Jednostki</a></li>
+                </ul>
+            </li>
+            <li class="mt-2"><a href="#struktura"><span class="numeracja">2.</span>Struktura opisu</a>
+            <ul class="list-unstyled ml-3 mb-0">
+                <li><a href="#podzial"><span class="numeracja">2.1.</span> Podział na sekcje</a></li>
+                <li><a href="#najwazniejsze"><span class="numeracja">2.2.</span> Najważniejsze cechy</a></li>
+                <li><a href="#przykladowe-sekcje"><span class="numeracja">2.3.</span> Przykładowe sekcje</a></li>
+            </ul></li>
+            <li class="mt-2"><a href="#wymiary"><span class="numeracja">3.</span> Wymiary produktów</a></li>
+            <li class="mt-2"><a href="#faq"><span class="numeracja">4.</span> FAQ</a></li>
+            <li class="mt-2"><a href="#specyfikacja"><span class="numeracja">5.</span> Specyfikacja</a></li>
+            
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="main-header mt-2 bg-dark text-white" id="zalozenia-ogolne" style="border-bottom:1px solid #ddd;">
+            <h2>1. Założenia ogólne (do wszystkiego)</h2>
+        </div>
+        <section class="module-card">
+            <div class="module-header" id="naglowek">
+                <h3><span class="mr-2 text-primary">1.1</span>Nagłówek</h3>
+            </div>
+            <div class="module-body">
+                <p>Początek opisu, <strong>&lt;h2&gt;</strong> przed paragrafem tekstu.</p>
+                <p>Najlepiej jakby był w formacie:<br>
+                    <code>[Typ urządzenia + marka] + [Seria lub Kluczowy parametr wyróżniający] + [Główne zastosowanie / Technologia]</code>
+                </p>
+
+                <div class="row justify-content-start mt-3">
+                    <div class="col-12 col-md-5 mx-3 example-box good">
+                        <h5 class="mb-1">DOBRZE:</h5>
+                        <a href="hik-dobry-przyklad1.jpg" data-fancybox="gallery"><img src="hik-dobry-przyklad1.jpg" alt="" class="img-fluid"></a>
+                        <h5 class="mt-3 mb-1">DOBRZE:</h5>
+                        <a href="hik-dobry-przyklad2.jpg" data-fancybox="gallery"><img src="hik-dobry-przyklad2.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-12 col-md-5 mx-3 example-box bad">
+                        <h5 class="mb-1">ŹLE:</h5>
+                        <a href="hik-zly-przyklad1.jpg" data-fancybox="gallery"><img src="hik-zly-przyklad1.jpg" alt="" class="img-fluid"></a>
+                        <h5 class="mt-3 mb-1">ŹLE:</h5>
+                        <a href="hik-zly-przyklad2.jpg" data-fancybox="gallery"><img src="hik-zly-przyklad2.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="module-card" id="fakty">
+            <div class="module-header">
+                <h3><span class="mr-2 text-primary">1.2</span>Konkrety i wartość informacyjna</h3>
+            </div>
+            <div class="module-body">
+                <p>Konkrety - faktyczne parametry i wartość dla użytkownika zamiast pustego marketingowego bełkotu.</p>
+                <p>Unikamy haseł typu "niezawodna" czy "bezkonkurencyjna" - AI takie coś ignoruje. Niech parametry same się bronią.</p>
+                <div class="row mt-3 justify-content-start">
+                    <div class="col-12 col-md-5 mx-3 example-box good">
+                        <h5>Dobrze:</h5>
+                        <p>Kamera typu bullet o rozdzielczości 4 Mpx (2560&nbsp;&#215;&nbsp;1440) z technologią ColorVu zapewniającą kolorowy obraz całą dobę. </p>
+                        <hr>
+                        <h5>Dobrze:</h5>
+                        <p>Kamera IP 4Mpx Dahua IPC-HDW1239V-A-IL to rozwiązanie dedykowane do monitoringu zewnętrznego (klasa szczelności IP67). Urządzenie wykorzystuje technologię Smart Dual Light - łączy standardowy promiennik IR z oświetlaczem LED o zasięgu do 30 metrów zapewniając kolorowy obraz także w nocnych.</p>
+                    </div>
+                    <div class="col-12 col-md-5 mx-3 example-box bad">
+                        <h5>Źle:</h5>
+                        <p>Wysokiej jakości kamera zapewniająca świetny obraz.<br><br></p>
+                        <hr>
+                        <h5>Źle:</h5>
+                        <p>Kamera kopułkowa Dahua to świetny wybór do monitoringu. Posiada wysoką rozdzielczość, dzięki czemu nic nie umknie Twojej uwadze. Sprawdzi się w dzień i w nocy, ponieważ ma wbudowany promiennik. Wykrywa ruch i jest odporna na warunki atmosferyczne. Idealna do monitoringu domu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="module-card" id="pytodp">
+            <div class="module-header">
+                <h3><span class="mr-2 text-primary">1.3</span>Struktura Pytanie + Odpowiedź</h3>
+            </div>
+            <div class="module-body">
+                <p>Jeśli jest taka możliwość to sekcje fajnie jest budować w formie: </p>
+                <ul class="pl-3 my-2">
+                    <li>nagłówek = pytanie</li>
+                    <li>pragraf tekstu = odpowiedź</li>
+                </ul>
+                <p>Jeśli nie ma czego wymyślić, to niech chociaż nagłówek będzie pytaniem.</p>
+                <div class="row mt-3 justify-content-start">
+
+                    <div class="col-12 col-md-5 mx-3 example-box good">
+                        <h5>Na przykład tak:</h5>
+                        <a href="vidos-przyklad.jpg" data-fancybox="gallery"><img src="vidos-przyklad.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-12 col-md-5 mx-3 example-box bad">
+                        <h5>Oryginał:</h5>
+                        <a href="vidos-oryginal.jpg" data-fancybox="gallery"><img src="vidos-oryginal.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+                <div class="row mt-3 justify-content-start">
+
+                    <div class="col-12 col-md-11 mx-3 example-box neutral">
+                        <h5>Inny przykład:</h5>
+                        <a href="hik-pytanieodp-przyklad.jpg" data-fancybox="gallery"><img src="hik-pytanieodp-przyklad.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="module-card" id="listy">
+            <div class="module-header">
+                <h3><span class="mr-2 text-primary">1.4</span>Listy</h3>
+            </div>
+            <div class="module-body">
+                <p>Gdy coś wymieniamy, jeśli jest taka możliwość to segregujmy jako lista.</p>
+                <div class="example-box bad mt-3"><p><strong>
+                Ważne:</strong> listy <strong class="text-danger">muszą być semantyczne</strong> - czyli nie paragrafy i br, tylko: <code>ul</code>/<code>ol</code> + <code>li</code></p></div>
+                <p class="mt-2">
+                    Wizualnie lista <strong>nie musi przypominać listy</strong>. Pozycje listy możemy dowolnie stylować.
+                    Polecam używanie bootstrapowej klasy <span class="text-primary">.list-unstyled</span> - czyści domyślne stylowanie.</p>
+
+                <div class="row mt-4 mb-5">
+                    <div class="col-md-7">
+                        <h6 class="text-success">To jest lista &#8628;</h6>
+                        <img src="ajax_przyklad-lista.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="section-label">Gotowy kod HTML</div>
+                        <div class="code-box">
+                            <div class="code-header">
+                                <button class="btn-copy mr-0 ml-auto" data-code-id="kod-lista">Kopiuj</button>
+                            </div>
+                            <pre>
+<code id="kod-lista">&lt;ul class="list-group list-group-flush d-flex flex-row flex-wrap justify-content-center"&gt;
+    &lt;li class="col-sm-12 col-md-5 col-lg-3 my-1 mt-md-3 mb-md-3 mx-3 p-2 d-flex flex-column align-items-center bg-light rounded-050"&gt;
+        &lt;img src="https://www.napad.pl/data/produkty/AJAX/!ikony/wired-wireless-connection_mini.png" class="img-fluid lazy mx-auto nogallery" loading="lazy" width="56" height="56" alt="Łączność bezprzewodowa"&gt;
+        &lt;h6 class="my-1"&gt;Łączność bezprzewodowa&lt;/h6&gt;
+    &lt;/li&gt;
+    &lt;li class="col-sm-12 col-md-5 col-lg-3 my-1 mt-md-3 mb-md-3 mx-3 p-2 d-flex flex-column align-items-center bg-light rounded-050"&gt;
+        &lt;img src="https://www.napad.pl/data/produkty/AJAX/!ikony/jeweller-logo_black.png" class="img-fluid lazy mx-auto nogallery" loading="lazy" width="56" height="56" alt="Komunikacja Jeweller"&gt;
+        &lt;h6 class="my-1"&gt;Komunikacja Jeweller&lt;/h6&gt;
+    &lt;/li&gt;
+    &lt;li class="col-sm-12 col-md-5 col-lg-3 my-1 mt-md-3 mb-md-3 mx-3 p-2 d-flex flex-column align-items-center bg-light rounded-050"&gt;
+        &lt;img src="https://www.napad.pl/data/produkty/AJAX/!ikony/smart-detect_mini.png" class="img-fluid lazy mx-auto nogallery" loading="lazy" width="56" height="56" alt="Sensory 2x PIR + K"&gt;
+        &lt;h6 class="my-1"&gt;Sensory 2x PIR + K&lt;/h6&gt;
+    &lt;/li&gt;
+    &lt;li class="col-sm-12 col-md-5 col-lg-3 my-1 mt-md-3 mb-md-3 mx-3 p-2 d-flex flex-column align-items-center bg-light rounded-050"&gt;
+        &lt;img src="https://www.napad.pl/data/produkty/AJAX/!ikony/15-m-distance_mini.png" class="img-fluid lazy mx-auto nogallery" loading="lazy" width="56" height="56" alt="Zasięg do 15 m"&gt;
+        &lt;h6 class="my-1"&gt;Zasięg detekcji 15 m&lt;/h6&gt;
+    &lt;/li&gt;
+    &lt;li class="col-sm-12 col-md-5 col-lg-3 my-1 mt-md-3 mb-md-3 mx-3 p-2 d-flex flex-column align-items-center bg-light rounded-050"&gt;
+        &lt;img src="https://www.napad.pl/data/produkty/AJAX/!ikony/one-sensors_mini.png" class="img-fluid lazy mx-auto nogallery" loading="lazy" width="56" height="56" alt="Montaż 2-4 m"&gt;
+        &lt;h6 class="my-1"&gt;Do montażu na wys. 4&nbsp;m.&lt;/h6&gt;
+    &lt;/li&gt;
+    &lt;li class="col-sm-12 col-md-5 col-lg-3 my-1 mt-md-3 mb-md-3 mx-3 p-2 d-flex flex-column align-items-center bg-light rounded-050"&gt;
+        &lt;img src="https://www.napad.pl/data/produkty/AJAX/!ikony/alarm-photo_mini.png" class="img-fluid lazy mx-auto nogallery" loading="lazy" width="56" height="56" alt="Zdjęcie na żądanie"&gt;
+        &lt;h6 class="my-1"&gt;Zdjęcia na żądanie (PhOD)&lt;/h6&gt;
+    &lt;/li&gt;
+    &lt;li class="col-sm-12 col-md-5 col-lg-3 my-1 mt-md-3 mb-md-3 mx-3 p-2 d-flex flex-column align-items-center bg-light rounded-050"&gt;
+         &lt;img src="https://www.napad.pl/data/produkty/AJAX/!ikony/tamper-m%D1%81-outdoor.png" class="img-fluid lazy mx-auto nogallery" loading="lazy" width="56" height="56" alt="Zabezpieczenia antysabotażowe"&gt;
+        &lt;h6 class="my-1"&gt;Ochrona antysabotażowa&lt;/h6&gt;
+    &lt;/li&gt;
+    &lt;li class="col-sm-12 col-md-5 col-lg-3 my-1 mt-md-3 mb-md-3 mx-3 p-2 d-flex flex-column align-items-center bg-light rounded-050"&gt;
+        &lt;img src="https://www.napad.pl/data/produkty/AJAX/!ikony/ip55_mini.png" class="img-fluid lazy mx-auto nogallery" loading="lazy" width="56" height="56" alt="Odporność IP55"&gt;
+        &lt;h6 class="my-1"&gt;Klasa szczelności IP55&lt;/h6&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code>
+                            </pre>
+                        </div>
+                    </div>
+
+                </div>
+                <p>Listy są też w specyfikacji:</p>
+                <div class="row justify-content-start">
+                    <div class="col-12 col-md-7">
+                        <img src="lista-w-spec.jpg" alt="" class="mt-4">
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="section-label">Gotowy kod HTML</div>
+                        <div class="code-box">
+                            <div class="code-header">
+                                <button class="btn-copy mr-0 ml-auto" data-code-id="kod-lista-spec">Kopiuj</button>
+                            </div>
+                            <pre><code id="kod-lista-spec">&lt;ul class="list-unstyled m-0"&gt;
+    &lt;li class="mb-1">Poziomo: 108,8&nbsp;&deg;&lt;/li&gt;
+    &lt;li class="mb-1">Pionowo: 56,4&nbsp;&deg;&lt;/li&gt;
+    &lt;li>Po przekątnej: 134,3&nbsp;&deg;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+           
+           <section class="module-card" id="tabelki">
+            <div class="module-header">
+                <h3><span class="mr-2 text-primary">1.6</span>Tabelki</h3>
+            </div>
+            <div class="module-body">
+            <div class="row">
+             <div class="col-md-7">
+               <div class="example-box bad mt-3"><p><strong>Ważne:</strong> Jeśli już gdzieś w opisie dajecie tabelki, to <strong class="text-danger">muszą być semantyczne</strong> - czyli nie divy a <code>table</code> + <code>tr</code> + <code>td</code></p></div>
+                
+                </div>
+                
+                                    <div class="col-md-5">
+                        <div class="section-label">Gotowy kod HTML</div>
+                        <div class="code-box" style="height:240px">
+                            <div class="code-header">
+                                <button class="btn-copy mr-0 ml-auto" data-code-id="kod-tabela">Kopiuj</button>
+                            </div>
+                            <pre>
+<code id="kod-tabela">&lt;table&gt;
+ &lt;tr&gt;
+   &lt;th&gt;Nagłówek 1&lt;/th&gt;
+   &lt;th&gt;Nagłówek 2&lt;/th&gt; 
+   &lt;th&gt;Nagłówek 3&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+   &lt;td&gt;Dane 1A&lt;/td&gt;
+   &lt;td&gt;Dane 1B&lt;/td&gt; 
+   &lt;td&gt;Dane 1C&lt;/td&gt;
+ &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td&gt;Dane 2A&lt;/td&gt;
+   &lt;td&gt;Dane 2B&lt;/td&gt; 
+   &lt;td&gt;Dane 2C&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code>
+                            </pre>
+                        </div>
+                    </div>
+               </div>
+               </div>
+        </section>
+            
+            
+           <section class="module-card" id="obrazki">
+            <div class="module-header">
+                <h3><span class="mr-2 text-primary">1.6</span>Obrazki</h3>
+            </div>
+            <div class="module-body">
+                <div class="example-box bad my-3"><h4 class="text-danger font-weight-bold">OBOWIĄZKOWE!</h4>
+                   Każdy element &lt;img&gt; ma mieć:
+                    <ul class="my-2 pl-4">
+                        <li>klasę <span class="text-primary"> .lazy</span></li>
+                        <li>atrybut <code class="text-dark">loading="lazy"</code></li>
+                        <li>atrybuty wymiarów <code class="text-dark">width="..." height="..."</code></li>
+                        <li>atrybut <code class="text-dark">alt="..."</code> który opisuje co jest na obrazku, np. "Porty rejestratora DS-7608NXI-K1/VPro.")</li>
+                    </ul>
+                </div>
+                <p class="mb-2">Każda istotna grafika musi być zamknięta w znaczniku <code>&lt;figure&gt;</code>.</p>
+                <p class="mb-2">Wewnątrz tagu <code>&lt;figure&gt;</code> powinien być opis zdjęcia w tagu <code>&lt;figcaption&gt;</code>.</p>
+                <p class="mb-2">Może być nad zdjęciem, jak i pod.</p>
+                <p class="mb-2">Opis ma dosłownie mówić co przedstawia grafika (np. "Schemat podłączenia czujek alarmowych do centrali", "Porty rejestratora DS-7608NXI-K1/VPro.").</p>
+                <div class="example-box neutral mb-3">
+                    <p><strong>Podpisy nie są obowiązkowe.</strong> Czasami będzie to źle wyglądało, gdy np. mamy dużo obrazków obok siebie (albo np. karuzela zdjęć).<br>
+                    Zasada jest taka, że <strong>nie musimy dawać gdy obrazek jest typowo dla ozdoby</strong> (nie pokazuje funkcji czy elementów produktu, np. portów)</p></div>
+                <h4>Obrazki z linkami</h4>
+               <p class="mb-2">Gdy dajemy link do obrazka (np. większe zdjęcie) do <code>&lt;img&gt;</code> dajemy klasę <span class="text-primary">.img-zoom-1</span></p>
+               <p>Każdy link ma mieć także atrybut <code>title="..."</code> - ma opisywać zdarzenie po kliknięciu, np. "Powiększ schemat urządzenia", "Przejdź do pełnej oferty kamer IPOX" itd.</p>
+                <div class="row mt-5 justify-content-start">
+                       <div class="col-12 col-md-4 mx-3">
+                        <h5>Przykład:</h5>
+                        <a href="figcaption-przyklad.jpg" class="" title="Powiększ obrazek"><img src="figcaption-przyklad.jpg" alt="" class="img-fluid img-zoom-1"></a>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="section-label">Gotowy kod HTML</div>
+                        <div class="code-box">
+                            <div class="code-header">
+                                <button class="btn-copy mr-0 ml-auto" data-code-id="kod-figure-img">Kopiuj</button>
+                            </div>
+                            <pre><code id="kod-figure-img">&lt;figure&gt;
+    &lt;a href="https://www.napad.pl/data/produkty/Hikvision/technologie/motion_detection_2.0/md2_0.jpg" title="Zasada działania Hikvision Motion Detection 2.0"&gt;
+        &lt;img src="https://www.napad.pl/data/produkty/Hikvision/technologie/motion_detection_2.0/md2_0.jpg" alt="Zasada działania Hikvision Motion Detection 2.0" loading="lazy" class="img-fluid lazy img-zoom-1" width="574" height="317"&gt;
+    &lt;/a&gt;
+    &lt;figcaption class="small mt-2 text-center"&gt;
+        Motion Detection 3.0 - oznaczanie zdarzeń.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               
+                </section>
+
+            <section class="module-card" id="liczby">
+            <div class="module-header">
+                <h3><span class="mr-2 text-primary">1.7</span>Liczby, jednostki </h3>
+            </div>
+            <div class="module-body">
+                <p>AI karmi się „twardymi danymi”: wymiary, wagi, temperatury pracy, pobór mocy, napięcie, zasięg itp. - nie pomijajcie jednostek.</p>
+            </div>
+        </section>
+        
+        
+        <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;" id="struktura">
+            <h2>2. Struktura opisu</h2>
+        </div>
+
+             <section class="module-card" id="podzial">
+            <div class="module-header">
+                <h3><span class="mr-2 text-primary">2.1</span>Podział na sekcje</h3>
+            </div>
+            <div class="module-body">
+            <div class="row">
+             <div class="col-md-7">
+              <p class="mb-2">Główne bloki opisu zawsze zamykamy w semantycznym tagu <code>&lt;section&gt;</code> (zamiast zwykłego <code>&lt;div&gt;</code>).</p>
+               <p>Wewnętrzne divy już mogą być divami.</p>
+                
+                </div>
+                
+                                    <div class="col-md-5">
+                        <div class="section-label">Gotowy kod HTML</div>
+                        <div class="code-box" style="height:240px">
+                            <div class="code-header">
+                                <button class="btn-copy mr-0 ml-auto" data-code-id="kod-section">Kopiuj</button>
+                            </div>
+                            <pre><code id="kod-section">&lt;section class="row my-4 justify-content-center"&gt;
+    &lt;div class="col-md-6"&gt;
+        &lt;h2 class="mb-3"&gt;Kamera IP 4K z detekcją ruchu AI i ColorVu&lt;/h2&gt;
+        &lt;p&gt;
+            Rozdzielczość &lt;strong&gt;8 Mpx&lt;/strong&gt; pozwala na precyzyjną identyfikację 
+            człowieka lub pojazdu z odległości &lt;strong&gt;do 15 metrów&lt;/strong&gt;. 
+            Wbudowany oświetlacz LED gwarantuje...
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-6"&gt;
+        ...
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                        </div>
+                    </div>
+               </div>
+               </div>
+        </section>
+        
+            <section class="module-card" id="najwazniejsze">
+            <div class="module-header">
+                <h3><span class="mr-2 text-primary">2.2</span>Najważniejsze / kluczowe cechy</h3>
+            </div>
+            <div class="module-body">
+                <p class="mb-2">Zaraz po wstępnym opisie powinny być wymienione <strong>najważniejsze / kluczowe cechy produktu</strong>.</p>
+                <p class="mb-2">Forma tego jest względnie dowolna, ale <strong>niech to będzie lista lub tabelka</strong>.</p>
+                <p>W drobnicy <strong>można to pominąć</strong>, np. gdy miałoby to <strong>zduplikować specyfikację</strong>.</p>
+                <h5 class="mt-4">Przykłady:</h5>
+                <div class="row mt-0">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <figure>
+                           <figcaption class="my-2 text-secondary text-center small mt-auto mb-0 align-self-end"><a href="https://www.napad.pl/produkty-935-15682-ds-2cd2367g3-lis2uy-sl-srb"><strong>Przykład - 64082</strong></a></figcaption>
+                            <img src="cechy_przyklad-1.jpg" class="img-fluid lazy" alt="" loading="lazy" width="500" height="441">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <figure>
+                           <figcaption class="my-2 text-secondary text-center small"><a href="https://www.napad.pl/produkty-934-15698-ids-2cd7t46g2-vx3-ihsy-kamera-ip-4mpx"><strong>Przykład - 2487</strong></a></figcaption>
+                            <img src="cechy_przyklad-2.jpg" class="img-fluid lazy" alt="" loading="lazy" width="500" height="441">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <figure>
+                           <figcaption class="my-2 text-secondary text-center small"><a href="https://www.napad.pl/produkty-1544-15496-ajax-motioncam-highmount-phod-czujnik-ruchu-zewnetrzny"><strong>Przykład - 65693</strong></a></figcaption>
+                            <img src="cechy_przyklad-3.jpg" class="img-fluid lazy" alt="" loading="lazy" width="500" height="441">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="module-card" id="przykladowe-sekcje">
+            <div class="module-header">
+                <h3><span class="mr-2 text-primary">2.3</span>Przykładowe sekcje</h3>
+            </div>
+            <div class="module-body">
+               <div class="alert alert-info">
+                   Poniższe sekcje <strong>nie są obowiązkowe</strong> - to tylko przykłady jakie warto byłoby umieścić, ale nie będą miały zastosowania dla każdego produktu. Dla drobnicy też nie ma sensu tego produkować.
+               </div>
+                <h5 class="">Przykłady:</h5>
+                <ul class="ml-4">
+                    <li class="mb-1">zastosowanie (np. lista wymieniająca scenariusze zastosowań)</li>
+                    <li class="mb-1">zasada działania (wyjaśniająca np. technologię)</li>
+                    <li>dlaczego xxx? (sekcja z argumentacją dlaczego dany produkt jest lepszy od innych)</li>
+                </ul>
+                
+                <div class="row mt-0 text-center justify-content-center">
+                    <div class="col-12 col-md-6">
+                        <figure>
+                           <figcaption class="my-2 text-secondary text-center small mt-auto mb-0 align-self-end"><a href="https://www.napad.pl/produkty-935-15679-ds-2cd3361g2-liuf-2-8mm-kamera-ip-6mpx"><strong>Przykład - 68284</strong></a></figcaption>
+                            <img src="scenario-1.jpg" class="img-fluid lazy" alt="" loading="lazy" width="500" height="441">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <figure>
+                           <figcaption class="my-2 text-secondary text-center small"><a href="https://www.napad.pl/produkty-1544-15496-ajax-motioncam-highmount-phod-czujnik-ruchu-zewnetrzny"><strong>Przykład - 65693</strong></a></figcaption>
+                            <img src="scenario-2.jpg" class="img-fluid lazy" alt="" loading="lazy" width="500" height="441">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+         <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;">
+            <h2>3. Wymiary</h2>
+        </div>
+         <section class="module-card" id="wymiary">
+            <div class="module-body">
+                <div class="alert alert-info mb-3">
+                    <p><strong>Wytyczne takie same jak dla obrazków: <a href="#obrazki">czytaj</a></strong>!</p>
+                </div>
+                <div class="module-grid">
+                    <div class="general-note">
+                        <ul class="ml-3">
+                            <li class="mb-2">Wymiary zawsze wpisujemy w kontener <code>&lt;figure&gt;</code>, a podpis umieszczamy w <code>&lt;figcaption&gt;</code></li>
+                            <li class="mb-2">Podpis musi mieć sztywną strukturę kończącą się kropką:<br>
+                                <code>Wymiary {typ urządzenia} {symbol produktu}.</code>
+                            </li>
+                            <li>W przypadku kombinacji z różnymi symbolami, zależnie od możliwości jedna z dróg do wyboru według uznania:
+                                <ol class="ml-3 mt-2 mb-0">
+                                    <li class="mb-2">Wymiary stacji bramowej DS-KV6114-(M)WBE1. <em class="text-info">(dla DS-KV6114-WBE1 i DS-KV6114-MWBE1)</em></li>
+                                    <li>Wymiary panelu domofonowego CP-31113TP / CP-3113R INOX. <em class="text-info">(oba modele przełamane na sztywno)</em>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <div class="section-label">Gotowy kod HTML</div>
+                        <div class="code-box">
+                            <div class="code-header">
+                                <button class="btn-copy mr-0 ml-auto" data-code-id="kod-wymiary">Kopiuj</button>
+                            </div>
+                            <pre><code id="kod-wymiary">&lt;figure&gt;
+    &lt;a href="https://www.napad.pl/data/produkty/.../wymiary.jpg" title="Wymiary panelu CP3113"&gt;
+        &lt;img src="https://www.napad.pl/data/produkty/.../wymiary_500.jpg" class="img-fluid lazy" alt="Wymiary panelu domofonowego CP3113" loading="lazy" width="500" height="441"&gt;
+    &lt;/a&gt;
+    &lt;figcaption class="mt-2 text-secondary text-center small"&gt;Wymiary panelu domofonowego CP-31113TP / CP-3113R INOX.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;" id="faq">
+            <h2>4. FAQ</h2>
+        </div>
+         <section class="module-card" id="faq">
+            <div class="module-body">
+                <ul class="pl-3">
+                    <li class="mb-2">Dajemy tam, gdzie uznajemy to za wartościowe (np. switche, monitory, alarmy). Pomijamy drobnicę.</li>
+                    <li class="mb-2">Wstawiamy <strong>w formie nowej zakładki</strong> o nazwie: <strong>FAQ</strong> (bez ikonki i podpowiedzi).</li>
+                    <li>Należy powtarzać nazwę produktu w pytaniu i odpowiadać pełnym zdaniem.</li>
+                </ul>
+                <div class="example-box bad mb-3">
+                    <p>Zwracać uwagę na numerację atrybutów <code class="text-danger">heading-1</code> oraz <code class="text-danger">collapse-1</code> dla każdego kolejnego pytania.</p>
+                </div>
+                <div class="code-grid mt-3">
+                    <div>
+                        <h5>Wariant 1: Maks. 4 pytania</h5>
+                        <div class="code-box">
+                            <div class="code-header">
+                                <span>HTML FAQ dla maks. 4 pytań</span>
+                                <button class="btn-copy" data-code-id="kod-faq-short">Kopiuj</button>
+                            </div>
+                            <pre><code id="kod-faq-short">
+&lt;header&gt;
+    &lt;p&gt;Odpowiedzi na najczęściej zadawane pytania dotyczące tego produktu.&lt;/p&gt;
+&lt;/header&gt;
+&lt;div id="productFaqAccordion" aria-labelledby="faq-title"&gt;
+    &lt;section class="product-faq px-0"&gt;
+        &lt;div class="row col-12 mx-auto my-0 p-0"&gt;
+            &lt;div class="accordion col-sm-12 m-0 p-0"&gt;
+
+                &lt;!-- PYTANIE 1 --&gt;
+                &lt;div class="card border m-0 px-0 py-1"&gt;
+                    &lt;div class="card-header bg-white px-2 py-1" id="heading-1"&gt;
+                        &lt;button class="btn btn-md btn-link btn-block text-left text-dark p-0 d-flex justify-content-between align-items-center collapsed shadow-none" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1"&gt;
+                            &lt;span class="mr-4"&gt;&lt;i class="fa-regular fa-circle-question d-none d-md-inline-block"&gt;&nbsp;&lt;/i&gt;
+                                PYTANIE 1
+                            &lt;/span&gt;
+                            &lt;span class="text-secondary ml-auto d-flex align-items-center"&gt;
+                                &lt;i class="fa fa-chevron-down faq-toggle-icon"&gt;&lt;/i&gt;
+                            &lt;/span&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div id="collapse-1" class="collapse" aria-labelledby="heading-1" data-parent="#productFaqAccordion"&gt;
+                        &lt;div class="card-body text-dark"&gt;
+                            &lt;p class="my-2"&gt;
+                                ODPOWIEDŹ NA PYTANIE 1
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- KONIEC PYTANIE 1 --&gt;
+                    
+                &lt;!-- PYTANIE 2 --&gt;
+                ...
+                &lt;!-- KONIEC PYTANIE 2 --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h5>Wariant 2: 5 i więcej pytań</h5>
+                        <div class="code-box">
+                            <div class="code-header">
+                                <span>HTML FAQ 5 i więcej pytań</span>
+                                <button class="btn-copy" data-code-id="kod-faq-long">Kopiuj</button>
+                            </div>
+                            <pre><code id="kod-faq-long">
+&lt;header&gt;
+    &lt;p&gt;Odpowiedzi na najczęściej zadawane pytania dotyczące tego produktu.&lt;/p&gt;
+&lt;/header&gt;
+&lt;div class="accordion-item" id="productFaqAccordion" aria-labelledby="faq-title"&gt;
+    &lt;div class="accordion-content text-short with-cover"&gt;
+        &lt;section class="product-faq px-0 pb-5"&gt;
+            &lt;div class="row col-12 mx-auto my-0 p-0"&gt;
+                &lt;div class="accordion col-sm-12 m-0 p-0"&gt;
+
+                    &lt;!-- PYTANIE 1 --&gt;
+                    &lt;div class="card border m-0 px-0 py-1"&gt;
+                        &lt;div class="card-header bg-white px-2 py-1" id="heading-1"&gt;
+                            &lt;button class="btn btn-md btn-link btn-block text-left text-dark p-0 d-flex justify-content-between align-items-center collapsed shadow-none" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1"&gt;
+                                &lt;span class="mr-4"&gt;&lt;i class="fa-regular fa-circle-question d-none d-md-inline-block"&gt;&nbsp;&lt;/i&gt;
+                                    PYTANIE 1
+                                &lt;/span&gt;
+                                &lt;span class="text-secondary ml-auto d-flex align-items-center"&gt;
+                                    &lt;i class="fa fa-chevron-down faq-toggle-icon"&gt;&lt;/i&gt;
+                                &lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div id="collapse-1" class="collapse" aria-labelledby="heading-1" data-parent="#productFaqAccordion"&gt;
+                            &lt;div class="card-body text-dark"&gt;
+                                &lt;p class="my-2"&gt;
+                                    ODPOWIEDŹ NA PYTANIE 1
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- KONIEC PYTANIE 1 --&gt;
+                    
+                    &lt;!-- PYTANIE 2 --&gt;
+                    ...
+                    &lt;!-- KONIEC PYTANIE 2 --&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+    &lt;div class="accordion-toggle-btn-container mt-0"&gt;
+        &lt;button type="button" class="accordion-toggle btn btn-primary js-text-dropdown-btn" data-open="Pokaż mniej" data-close="Pokaż więcej"&gt;
+            &lt;span class="text"&gt;Pokaż więcej&lt;/span&gt;
+            &lt;svg class="arrow" width="20" height="20" viewBox="0 0 24 24"&gt;
+                &lt;path d="M6 9l6 6 6-6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;/path&gt;
+            &lt;/svg&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                            </pre>
+                        </div>
+                        <div class="module-note info mt-2">
+                            <p>Wersja dla 5+ ukrywa kolejne pytania i dodaje przycisk do rozwinięcia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+         <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;" id="specyfikacja">
+            <h2>5. Specyfikacja</h2>
+        </div>
+             <section class="module-card" id="podzial">
+            <div class="module-body">
+            <p class="mb-2">
+                Tabelka w specyfikacji z czynników zewnętrznych <strong>nie jest semantyczna</strong> ale taka <strong>musi zostać</strong>.
+            </p>
+             <p class="mb-2">
+                 Natomiast gdy wymieniamy jakieś parametry w ramach jednej grupy to starajmy się używać list (patrz: <a href="#listy" class="text-primary font-weight-bold">1.4 listy</a>).
+             </p>
+                <div class="row mt-3 justify-content-start">
+
+                    <div class="col-12 col-md-5 mx-3 example-box good">
+                        <h5>DOBRZE:</h5>
+                        <code>&lt;ul class="list-unstyled"&gt;
+    &lt;li class="mb-1"&gt;Główny strumień: H.265+ / H.265 / H.264+ / H.264&lt;/li&gt;
+    &lt;li class="mb-1"&gt;Pomocniczy strumień: H.265 / H.264 / MJPEG&lt;/li&gt;
+    &lt;li class="mb-1"&gt;Trzeci strumień*: H.265 / H.264&lt;/li&gt;
+    &lt;li&gt;Czwarty strumień*: H.265 / H.264 / MJPEG&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="mb-0"&gt;
+    *Trzeci i czwarty strumień obsługiwany jest tylko w określonych warunkach
+&lt;/p&gt;</code>
+                    </div>
+                    <div class="col-12 col-md-5 mx-3 example-box bad">
+                        <h5>ŹLE:</h5>
+                        <code>&lt;p&gt;Główny strumień: H.265+ / H.265 / H.264+ / H.264&lt;/p&gt;
+&lt;p&gt;Pomocniczy strumień: H.265 / H.264 / MJPEG&lt;/p&gt;
+&lt;p&gt;Trzeci strumień*: H.265 / H.264&lt;/p&gt;
+Czwarty strumień*: H.265 / H.264 / MJPEG
+&lt;p class="mb-0"&gt;
+    *Trzeci i czwarty strumień obsługiwany jest tylko w określonych warunkach
+&lt;/p&gt;</code>
+                    </div>
+                </div>
+                 </div>
+        </section>
+
+    </main>
+    <div id="toast">✅ Skopiowano kod do schowka!</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toast = document.getElementById('toast');
+            let toastTimer;
+
+            const showToast = () => {
+                toast.classList.add('show');
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 2000);
+            };
+
+            // Obsługa mechanizmu kopiowania
+            document.querySelectorAll('.btn-copy').forEach(button => {
+                button.addEventListener('click', () => {
+                    const codeId = button.getAttribute('data-code-id');
+                    const codeElement = document.getElementById(codeId);
+
+                    if (codeElement) {
+                        const textToCopy = codeElement.textContent.trim();
+                        navigator.clipboard.writeText(textToCopy).then(() => {
+                            showToast();
+                        }).catch(err => {
+                            console.error('Błąd podczas kopiowania:', err);
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
