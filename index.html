@@ -18,26 +18,29 @@
         <div class="sidebar-title">Spis Treści</div>
         <ul class="nav-links">
             <li><a href="#zalozenia-ogolne"><span class="numeracja">1.</span> Założenia ogólne</a>
-                <ul class="list-unstyled ml-3 mb-0">
-                    <li><a href="#naglowek"><span class="numeracja">1.1.</span> Nagłówek</a></li>
-                    <li><a href="#fakty"><span class="numeracja">1.2.</span> Fakty i konkrety</a></li>
+                <ul class="list-unstyled ml-2 mb-0">
+                    <li><a href="#hierarchia-naglowkow"><span class="numeracja">1.1.</span> Hierarchia nagłówków</a></li>
+                    <li><a href="#fakty"><span class="numeracja">1.2.</span> Konkrety</a></li>
                     <li><a href="#pytodp"><span class="numeracja">1.3.</span> Pytanie + odp</a></li>
-                    <li><a href="#listy"><span class="numeracja">1.4.</span> Listy</a></li>
-                    <li><a href="#tabelki"><span class="numeracja">1.5.</span> Tabelki</a></li>
-                    <li><a href="#obrazki"><span class="numeracja">1.6.</span> Obrazy</a></li>
+                    <li><a href="#obrazki"><span class="numeracja">1.4.</span> Obrazy</a></li>
+                    <li><a href="#listy"><span class="numeracja">1.5.</span> Listy</a></li>
+                    <li><a href="#tabelki"><span class="numeracja">1.6.</span> Tabelki</a></li>
                     <li><a href="#liczby"><span class="numeracja">1.7.</span> Jednostki</a></li>
                 </ul>
             </li>
             <li class="mt-2"><a href="#struktura"><span class="numeracja">2.</span>Struktura opisu</a>
-            <ul class="list-unstyled ml-3 mb-0">
-                <li><a href="#podzial"><span class="numeracja">2.1.</span> Podział na sekcje</a></li>
-                <li><a href="#najwazniejsze"><span class="numeracja">2.2.</span> Najważniejsze cechy</a></li>
-                <li><a href="#przykladowe-sekcje"><span class="numeracja">2.3.</span> Przykładowe sekcje</a></li>
-            </ul></li>
+                <ul class="list-unstyled ml-2 mb-0">
+                    <li><a href="#podzial"><span class="numeracja">2.1.</span> Podział na sekcje</a></li>
+                    <li><a href="#naglowek"><span class="numeracja">2.2.</span> Nagłówek</a></li>
+                    <li><a href="#opis-wstep"><span class="numeracja">2.3.</span> Wstępny opis</a></li>
+                    <li><a href="#najwazniejsze"><span class="numeracja">2.4.</span> Najważniejsze cechy</a></li>
+                    <li><a href="#przykladowe-sekcje"><span class="numeracja">2.5.</span> Przykładowe sekcje</a></li>
+                </ul>
+            </li>
             <li class="mt-2"><a href="#wymiary"><span class="numeracja">3.</span> Wymiary produktów</a></li>
             <li class="mt-2"><a href="#faq"><span class="numeracja">4.</span> FAQ</a></li>
             <li class="mt-2"><a href="#specyfikacja"><span class="numeracja">5.</span> Specyfikacja</a></li>
-            
+            <li class="mt-2"><a href="#pliki"><span class="numeracja">6.</span> Pliki - nazewnictwo</a></li>
         </ul>
         <a href="wytyczne-napad_pliki.zip" class="p-2 bg-success text-white rounded text-center img-zoom-1 text-decoration-none" download>Pobierz pliki lokalnie</a>
     </nav>
@@ -46,37 +49,23 @@
         <div class="main-header mt-2 bg-dark text-white" id="zalozenia-ogolne" style="border-bottom:1px solid #ddd;">
             <h2>1. Założenia ogólne (do wszystkiego)</h2>
         </div>
-        <section class="module-card">
-            <div class="module-header" id="naglowek">
-                <h3><span class="mr-2 text-primary">1.1</span>Nagłówek</h3>
+
+        <section class="module-card" id="hierarchia-naglowkow">
+            <div class="module-header">
+                <h3><span class="mr-2 text-primary">1.1</span>Hierarchia nagłówków</h3>
             </div>
             <div class="module-body">
-                <p>Początek opisu, <strong>&lt;h2&gt;</strong> przed paragrafem tekstu.</p>
-                <p>Najlepiej jakby był w formacie:<br>
-                    <code>[Typ urządzenia + marka] + [Seria lub Kluczowy parametr wyróżniający] + [Główne zastosowanie / Technologia]</code>
-                </p>
-
-                <div class="row justify-content-start mt-3">
-                    <div class="col-12 col-md-5 mx-3 example-box good">
-                        <h5 class="mb-1">DOBRZE:</h5>
-                        <a href="hik-dobry-przyklad1.jpg" data-fancybox="gallery"><img src="hik-dobry-przyklad1.jpg" alt="" class="img-fluid"></a>
-                        <h5 class="mt-3 mb-1">DOBRZE:</h5>
-                        <a href="hik-dobry-przyklad2.jpg" data-fancybox="gallery"><img src="hik-dobry-przyklad2.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                    <div class="col-12 col-md-5 mx-3 example-box bad">
-                        <h5 class="mb-1">ŹLE:</h5>
-                        <a href="hik-zly-przyklad1.jpg" data-fancybox="gallery"><img src="hik-zly-przyklad1.jpg" alt="" class="img-fluid"></a>
-                        <h5 class="mt-3 mb-1">ŹLE:</h5>
-                        <a href="hik-zly-przyklad2.jpg" data-fancybox="gallery"><img src="hik-zly-przyklad2.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                </div>
+                <p class="mb-2">Trzymamy się hierarchii nagłówków, czyli h2 -> h3 -> h4 itd..</p>
+                <p class="mb-2"><strong>Nie stosujemy <code>&lt;h1&gt;</code> - może być on tylko jeden na stronę, a u nas to jest nazwa produktu nad ceną.</strong></p>
+                <p class="mb-2">Główne nagłowki dla każdej sekcji powinny być w <code>&lt;h2&gt;</code> - może być ich dowolna ilość.</p>
+                <p class="mb-2">Jeśli w ramach sekcji chcemy kolejne nagłówki w kolejnych zagnieżdżeniach, to schodzimy w dół do <code>&lt;h3&gt;</code>, głębiej <code>&lt;h4&gt;</code> itd. <code>&lt;h4&gt;</code>.
+                <p>Przypominam o istnieniu klas <span class="text-primary"> .h1</span> - <span class="text-primary"> .h6</span> - jeśli chcecie h3 wielkości h2 to wtedy dajemy <code>&lt;h3 class="h2"&gt;</code> itd.</p>
             </div>
         </section>
 
-
         <section class="module-card" id="fakty">
             <div class="module-header">
-                <h3><span class="mr-2 text-primary">1.2</span>Konkrety i wartość informacyjna</h3>
+                <h3><span class="mr-2 text-primary">1.2</span>Konkrety</h3>
             </div>
             <div class="module-body">
                 <p>Konkrety - faktyczne parametry i wartość dla użytkownika zamiast pustego marketingowego bełkotu.</p>
@@ -106,7 +95,7 @@
             </div>
             <div class="module-body">
                 <p>Jeśli jest taka możliwość to sekcje fajnie jest budować w formie: </p>
-                <ul class="pl-3 my-2">
+                <ul class="ml-4 my-2">
                     <li>nagłówek = pytanie</li>
                     <li>pragraf tekstu = odpowiedź</li>
                 </ul>
@@ -132,15 +121,68 @@
             </div>
         </section>
 
+        <section class="module-card" id="obrazki">
+            <div class="module-header">
+                <h3><span class="mr-2 text-primary">1.4</span>Obrazki</h3>
+            </div>
+            <div class="module-body">
+                <div class="example-box bad my-3">
+                    <h4 class="text-danger font-weight-bold">OBOWIĄZKOWE!</h4>
+                    Każdy element &lt;img&gt; ma mieć:
+                    <ul class="my-2 ml-4">
+                        <li>klasę <span class="text-primary"> .lazy</span></li>
+                        <li>atrybut <code class="text-dark">loading="lazy"</code></li>
+                        <li>atrybuty wymiarów <code class="text-dark">width="..." height="..."</code></li>
+                        <li>atrybut <code class="text-dark">alt="..."</code> który opisuje co jest na obrazku, np. "Porty rejestratora DS-7608NXI-K1/VPro.")</li>
+                    </ul>
+                </div>
+                <p class="mb-2">Każda istotna grafika musi być zamknięta w znaczniku <code>&lt;figure&gt;</code>.</p>
+                <p class="mb-2">Wewnątrz tagu <code>&lt;figure&gt;</code> powinien być opis zdjęcia w tagu <code>&lt;figcaption&gt;</code>.</p>
+                <p class="mb-2">Może być nad zdjęciem, jak i pod.</p>
+                <p class="mb-2">Opis ma dosłownie mówić co przedstawia grafika (np. "Schemat podłączenia czujek alarmowych do centrali", "Porty rejestratora DS-7608NXI-K1/VPro.").</p>
+                <div class="example-box neutral mb-3">
+                    <p><strong>Podpisy nie są obowiązkowe.</strong> Czasami będzie to źle wyglądało, gdy np. mamy dużo obrazków obok siebie (albo np. karuzela zdjęć).<br>
+                        Zasada jest taka, że <strong>nie musimy dawać gdy obrazek jest typowo dla ozdoby</strong> (nie pokazuje funkcji czy elementów produktu, np. portów)</p>
+                </div>
+                <h4>Obrazki z linkami</h4>
+                <p class="mb-2">Gdy dajemy link do obrazka (np. większe zdjęcie) do <code>&lt;img&gt;</code> dajemy klasę <span class="text-primary">.img-zoom-1</span></p>
+                <div class="row mt-5 justify-content-start">
+                    <div class="col-12 col-md-4 mx-3">
+                        <h5>Przykład:</h5>
+                        <a href="figcaption-przyklad.jpg" class=""><img src="figcaption-przyklad.jpg" alt="" class="img-fluid img-zoom-1"></a>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="section-label">Gotowy kod HTML</div>
+                        <div class="code-box">
+                            <div class="code-header">
+                                <button class="btn-copy mr-0 ml-auto" data-code-id="kod-figure-img">Kopiuj</button>
+                            </div>
+                            <code id="kod-figure-img"><pre>&lt;figure&gt;
+    &lt;a href="https://www.napad.pl/data/produkty/Hikvision/technologie/motion_detection_2.0/md2_0.jpg"&gt;
+        &lt;img src="https://www.napad.pl/data/produkty/Hikvision/technologie/motion_detection_2.0/md2_0.jpg" alt="Zasada działania Hikvision Motion Detection 2.0" loading="lazy" class="img-fluid lazy img-zoom-1" width="574" height="317"&gt;
+    &lt;/a&gt;
+    &lt;figcaption class="small mt-2 text-center"&gt;
+        Motion Detection 3.0 - oznaczanie zdarzeń.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;</pre></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
 
         <section class="module-card" id="listy">
             <div class="module-header">
-                <h3><span class="mr-2 text-primary">1.4</span>Listy</h3>
+                <h3><span class="mr-2 text-primary">1.5</span>Listy</h3>
             </div>
             <div class="module-body">
                 <p>Gdy coś wymieniamy, jeśli jest taka możliwość to segregujmy jako lista.</p>
-                <div class="example-box bad mt-3"><p><strong>
-                Ważne:</strong> listy <strong class="text-danger">muszą być semantyczne</strong> - czyli nie paragrafy i br, tylko: <code>ul</code>/<code>ol</code> + <code>li</code></p></div>
+                <div class="example-box bad mt-3">
+                    <p><strong>
+                            Ważne:</strong> listy <strong class="text-danger">muszą być semantyczne</strong> - czyli nie paragrafy i br, tylko: <code>ul</code>/<code>ol</code> + <code>li</code></p>
+                </div>
                 <p class="mt-2">
                     Wizualnie lista <strong>nie musi przypominać listy</strong>. Pozycje listy możemy dowolnie stylować.
                     Polecam używanie bootstrapowej klasy <span class="text-primary">.list-unstyled</span> - czyści domyślne stylowanie.</p>
@@ -156,8 +198,7 @@
                             <div class="code-header">
                                 <button class="btn-copy mr-0 ml-auto" data-code-id="kod-lista">Kopiuj</button>
                             </div>
-                            <pre>
-<code id="kod-lista">&lt;ul class="list-group list-group-flush d-flex flex-row flex-wrap justify-content-center"&gt;
+<code id="kod-lista"><pre>&lt;ul class="list-group list-group-flush d-flex flex-row flex-wrap justify-content-center"&gt;
     &lt;li class="col-sm-12 col-md-5 col-lg-3 my-1 mt-md-3 mb-md-3 mx-3 p-2 d-flex flex-column align-items-center bg-light rounded-050"&gt;
         &lt;img src="https://www.napad.pl/data/produkty/AJAX/!ikony/wired-wireless-connection_mini.png" class="img-fluid lazy mx-auto nogallery" loading="lazy" width="56" height="56" alt="Łączność bezprzewodowa"&gt;
         &lt;h6 class="my-1"&gt;Łączność bezprzewodowa&lt;/h6&gt;
@@ -190,13 +231,14 @@
         &lt;img src="https://www.napad.pl/data/produkty/AJAX/!ikony/ip55_mini.png" class="img-fluid lazy mx-auto nogallery" loading="lazy" width="56" height="56" alt="Odporność IP55"&gt;
         &lt;h6 class="my-1"&gt;Klasa szczelności IP55&lt;/h6&gt;
     &lt;/li&gt;
-&lt;/ul&gt;</code>
-                            </pre>
+&lt;/ul&gt;</pre></code>
+                            
                         </div>
                     </div>
 
                 </div>
                 <p>Listy są też w specyfikacji:</p>
+                <p class="small">(Więcej o tym w <a href="#specyfikacja" class="text-primary font-weight-bold">5. Specyfikacja</a>)</p>
                 <div class="row justify-content-start">
                     <div class="col-12 col-md-7">
                         <img src="lista-w-spec.jpg" alt="" class="mt-4">
@@ -207,36 +249,40 @@
                             <div class="code-header">
                                 <button class="btn-copy mr-0 ml-auto" data-code-id="kod-lista-spec">Kopiuj</button>
                             </div>
-                            <pre><code id="kod-lista-spec">&lt;ul class="list-unstyled m-0"&gt;
+                            <code id="kod-lista-spec"><pre>&lt;ul class="list-unstyled m-0"&gt;
     &lt;li class="mb-1">Poziomo: 108,8&nbsp;&deg;&lt;/li&gt;
     &lt;li class="mb-1">Pionowo: 56,4&nbsp;&deg;&lt;/li&gt;
     &lt;li>Po przekątnej: 134,3&nbsp;&deg;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+&lt;/ul&gt;</pre></code>
                         </div>
                     </div>
+
                 </div>
             </div>
+
         </section>
-           
-           <section class="module-card" id="tabelki">
-            <div class="module-header">
+
+        <section class="module-card" id="tabelki">
+            <div class="module-body">
+                <div class="row">
+                    <div class="col-md-7">
+                                   <div class="module-header">
                 <h3><span class="mr-2 text-primary">1.6</span>Tabelki</h3>
             </div>
-            <div class="module-body">
-            <div class="row">
-             <div class="col-md-7">
-               <div class="example-box bad mt-3"><p><strong>Ważne:</strong> Jeśli już gdzieś w opisie dajecie tabelki, to <strong class="text-danger">muszą być semantyczne</strong> - czyli nie divy a <code>table</code> + <code>tr</code> + <code>td</code></p></div>
-                
-                </div>
-                
-                                    <div class="col-md-5">
+                        <div class="example-box bad mt-3">
+                            <p><strong>Ważne:</strong> Jeśli już gdzieś w opisie dajecie tabelki, to <strong class="text-danger">muszą być semantyczne</strong> - czyli nie divy a <code>table</code> + <code>tr</code> + <code>td</code></p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-5">
                         <div class="section-label">Gotowy kod HTML</div>
                         <div class="code-box" style="height:240px">
                             <div class="code-header">
                                 <button class="btn-copy mr-0 ml-auto" data-code-id="kod-tabela">Kopiuj</button>
                             </div>
-                            <pre>
-<code id="kod-tabela">&lt;table&gt;
+                            
+<code id="kod-tabela"><pre>&lt;table&gt;
  &lt;tr&gt;
    &lt;th&gt;Nagłówek 1&lt;/th&gt;
    &lt;th&gt;Nagłówek 2&lt;/th&gt; 
@@ -252,67 +298,18 @@
    &lt;td&gt;Dane 2B&lt;/td&gt; 
    &lt;td&gt;Dane 2C&lt;/td&gt;
   &lt;/tr&gt;
-&lt;/table&gt;</code>
-                            </pre>
+&lt;/table&gt;</pre></code>
+                            
                         </div>
                     </div>
-               </div>
-               </div>
-        </section>
-            
-            
-           <section class="module-card" id="obrazki">
-            <div class="module-header">
-                <h3><span class="mr-2 text-primary">1.6</span>Obrazki</h3>
+                </div>
             </div>
-            <div class="module-body">
-                <div class="example-box bad my-3"><h4 class="text-danger font-weight-bold">OBOWIĄZKOWE!</h4>
-                   Każdy element &lt;img&gt; ma mieć:
-                    <ul class="my-2 pl-4">
-                        <li>klasę <span class="text-primary"> .lazy</span></li>
-                        <li>atrybut <code class="text-dark">loading="lazy"</code></li>
-                        <li>atrybuty wymiarów <code class="text-dark">width="..." height="..."</code></li>
-                        <li>atrybut <code class="text-dark">alt="..."</code> który opisuje co jest na obrazku, np. "Porty rejestratora DS-7608NXI-K1/VPro.")</li>
-                    </ul>
-                </div>
-                <p class="mb-2">Każda istotna grafika musi być zamknięta w znaczniku <code>&lt;figure&gt;</code>.</p>
-                <p class="mb-2">Wewnątrz tagu <code>&lt;figure&gt;</code> powinien być opis zdjęcia w tagu <code>&lt;figcaption&gt;</code>.</p>
-                <p class="mb-2">Może być nad zdjęciem, jak i pod.</p>
-                <p class="mb-2">Opis ma dosłownie mówić co przedstawia grafika (np. "Schemat podłączenia czujek alarmowych do centrali", "Porty rejestratora DS-7608NXI-K1/VPro.").</p>
-                <div class="example-box neutral mb-3">
-                    <p><strong>Podpisy nie są obowiązkowe.</strong> Czasami będzie to źle wyglądało, gdy np. mamy dużo obrazków obok siebie (albo np. karuzela zdjęć).<br>
-                    Zasada jest taka, że <strong>nie musimy dawać gdy obrazek jest typowo dla ozdoby</strong> (nie pokazuje funkcji czy elementów produktu, np. portów)</p></div>
-                <h4>Obrazki z linkami</h4>
-               <p class="mb-2">Gdy dajemy link do obrazka (np. większe zdjęcie) do <code>&lt;img&gt;</code> dajemy klasę <span class="text-primary">.img-zoom-1</span></p>
-               <p>Każdy link ma mieć także atrybut <code>title="..."</code> - ma opisywać zdarzenie po kliknięciu, np. "Powiększ schemat urządzenia", "Przejdź do pełnej oferty kamer IPOX" itd.</p>
-                <div class="row mt-5 justify-content-start">
-                       <div class="col-12 col-md-4 mx-3">
-                        <h5>Przykład:</h5>
-                        <a href="figcaption-przyklad.jpg" class="" title="Powiększ obrazek"><img src="figcaption-przyklad.jpg" alt="" class="img-fluid img-zoom-1"></a>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="section-label">Gotowy kod HTML</div>
-                        <div class="code-box">
-                            <div class="code-header">
-                                <button class="btn-copy mr-0 ml-auto" data-code-id="kod-figure-img">Kopiuj</button>
-                            </div>
-                            <pre><code id="kod-figure-img">&lt;figure&gt;
-    &lt;a href="https://www.napad.pl/data/produkty/Hikvision/technologie/motion_detection_2.0/md2_0.jpg" title="Zasada działania Hikvision Motion Detection 2.0"&gt;
-        &lt;img src="https://www.napad.pl/data/produkty/Hikvision/technologie/motion_detection_2.0/md2_0.jpg" alt="Zasada działania Hikvision Motion Detection 2.0" loading="lazy" class="img-fluid lazy img-zoom-1" width="574" height="317"&gt;
-    &lt;/a&gt;
-    &lt;figcaption class="small mt-2 text-center"&gt;
-        Motion Detection 3.0 - oznaczanie zdarzeń.
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-                            </code></pre>
-                        </div>
-                    </div>
-                </div>
-               </div>
-               
-                </section>
+        </section>
 
-            <section class="module-card" id="liczby">
+
+
+
+        <section class="module-card" id="liczby">
             <div class="module-header">
                 <h3><span class="mr-2 text-primary">1.7</span>Liczby, jednostki </h3>
             </div>
@@ -320,31 +317,29 @@
                 <p>AI karmi się „twardymi danymi”: wymiary, wagi, temperatury pracy, pobór mocy, napięcie, zasięg itp. - nie pomijajcie jednostek.</p>
             </div>
         </section>
-        
-        
+
         <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;" id="struktura">
             <h2>2. Struktura opisu</h2>
         </div>
 
-             <section class="module-card" id="podzial">
-            <div class="module-header">
-                <h3><span class="mr-2 text-primary">2.1</span>Podział na sekcje</h3>
-            </div>
+        <section class="module-card" id="podzial">
             <div class="module-body">
-            <div class="row">
-             <div class="col-md-7">
-              <p class="mb-2">Główne bloki opisu zawsze zamykamy w semantycznym tagu <code>&lt;section&gt;</code> (zamiast zwykłego <code>&lt;div&gt;</code>).</p>
-               <p>Wewnętrzne divy już mogą być divami.</p>
-                
-                </div>
-                
-                                    <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="module-header">
+                            <h3><span class="mr-2 text-primary">2.1</span>Podział na sekcje</h3>
+                        </div>
+                        <p class="mb-2">Główne bloki opisu zawsze zamykamy w semantycznym tagu <code>&lt;section&gt;</code> (zamiast zwykłego <code>&lt;div&gt;</code>).</p>
+                        <p>W środku <code>&lt;section&gt;</code> można dowolnie stosować <code>&lt;div&gt;</code>.</p>
+                    </div>
+
+                    <div class="col-md-5">
                         <div class="section-label">Gotowy kod HTML</div>
                         <div class="code-box" style="height:240px">
                             <div class="code-header">
                                 <button class="btn-copy mr-0 ml-auto" data-code-id="kod-section">Kopiuj</button>
                             </div>
-                            <pre><code id="kod-section">&lt;section class="row my-4 justify-content-center"&gt;
+                            <code id="kod-section"><pre>&lt;section class="row my-4 justify-content-center"&gt;
     &lt;div class="col-md-6"&gt;
         &lt;h2 class="mb-3"&gt;Kamera IP 4K z detekcją ruchu AI i ColorVu&lt;/h2&gt;
         &lt;p&gt;
@@ -356,16 +351,96 @@
     &lt;div class="col-md-6"&gt;
         ...
     &lt;/div&gt;
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;</pre></code>
                         </div>
                     </div>
-               </div>
-               </div>
+                </div>
+            </div>
         </section>
-        
-            <section class="module-card" id="najwazniejsze">
+
+        <section class="module-card">
+            <div class="module-header" id="naglowek">
+                <h3><span class="mr-2 text-primary">2.2</span>Nagłówek</h3>
+            </div>
+            <div class="module-body">
+                <p>Początek opisu, <strong>&lt;h2&gt;</strong> przed paragrafem tekstu.</p>
+                <p>Najlepiej jakby był w formacie:<br>
+                    <code>[Typ urządzenia + marka] + [Seria lub Kluczowy parametr wyróżniający] + [Główne zastosowanie / Technologia]</code>
+                </p>
+
+                <div class="row justify-content-start mt-3">
+                    <div class="col-12 col-md-5 mx-3 example-box good">
+                        <h5 class="mb-1">DOBRZE:</h5>
+                        <a href="hik-dobry-przyklad1.jpg" data-fancybox="gallery"><img src="hik-dobry-przyklad1.jpg" alt="" class="img-fluid"></a>
+                        <h5 class="mt-3 mb-1">DOBRZE:</h5>
+                        <a href="hik-dobry-przyklad2.jpg" data-fancybox="gallery"><img src="hik-dobry-przyklad2.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-12 col-md-5 mx-3 example-box bad">
+                        <h5 class="mb-1">ŹLE:</h5>
+                        <a href="hik-zly-przyklad1.jpg" data-fancybox="gallery"><img src="hik-zly-przyklad1.jpg" alt="" class="img-fluid"></a>
+                        <h5 class="mt-3 mb-1">ŹLE:</h5>
+                        <a href="hik-zly-przyklad2.jpg" data-fancybox="gallery"><img src="hik-zly-przyklad2.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="module-card">
+            <div class="module-header" id="opis-wstep">
+                <h3><span class="mr-2 text-primary">2.3</span>Wstępny opis</h3>
+            </div>
+            <div class="module-body">
+                <p class="mb-2">Główny tekst pod nagłówkiem: krótki, zwięzły, 3-4 zdaniowy opis wyczerpujący czym jest produkt, wymieniając jego silne strony.
+                </p>
+                <p>Niżej, już w osobnym paragrafie, można rozwinąć opis i ukryć go pod przyciskiem "Czytaj więcej".</p>
+                <div class="row justify-content-start mt-3">
+                    <div class="col-12 col-md-5 mx-3 example-box good">
+                        <h5 class="mb-1">PRZYKŁAD:</h5>
+                        <a href="hik-opis-przyklad.jpg" data-fancybox="gallery"><img src="hik-opis-przyklad.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-12 col-md-5 mx-3 example-box good">
+                        <h5 class="mb-1">PRZYKŁAD:</h5>
+                        <a href="ajax-opis-przyklad.jpg" data-fancybox="gallery"><img src="ajax-opis-przyklad.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+                <hr>
+                <p>Zgodnie z odgórnymi ustaleniami, jeśli opis zajmuje <strong>więcej niż 3 linijki</strong>, razem z nagłówkiem <strong>zamykamy go w "bańce"</strong>, np. z zaokrąglonymi rogami i cieniem:</p>
+               <div class="row justify-content-start mt-3">
+                    <div class="col-12 col-md-5 mx-3">
+                        <pre class="text-dark"><code>&lt;section class="row mt-2 border shadow p-4 mb-2 rounded-150"&gt;
+    &lt;div class="col-12"&gt;
+        &lt;h2 class="text-center">nagłówek...&lt;/h2&gt;
+        &lt;p class="text-justify"&gt;
+            opis...
+        &lt;/p&gt;
+    &lt;/div&gt;
+ &lt;/section&gt;</code></pre>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <div class="section-label">Gotowy kod HTML</div>
+                        <div class="code-box">
+                            <div class="code-header">
+                                <button class="btn-copy mr-0 ml-auto" data-code-id="kod-figure-img">Kopiuj</button>
+                            </div>
+                            <code id="kod-figure-img"><pre>&lt;section class="row mt-2 border shadow p-4 mb-2 rounded-150"&gt;
+    &lt;div class="col-12"&gt;
+        &lt;h2 class="text-center">nagłówek...&lt;/h2&gt;
+        &lt;p class="text-justify"&gt;
+            opis...
+        &lt;/p&gt;
+    &lt;/div&gt;
+ &lt;/section&gt;</pre></code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="module-card" id="najwazniejsze">
             <div class="module-header">
-                <h3><span class="mr-2 text-primary">2.2</span>Najważniejsze / kluczowe cechy</h3>
+                <h3><span class="mr-2 text-primary">2.4</span>Najważniejsze / kluczowe cechy</h3>
             </div>
             <div class="module-body">
                 <p class="mb-2">Zaraz po wstępnym opisie powinny być wymienione <strong>najważniejsze / kluczowe cechy produktu</strong>.</p>
@@ -375,73 +450,74 @@
                 <div class="row mt-0">
                     <div class="col-12 col-md-6 col-lg-4">
                         <figure>
-                           <figcaption class="my-2 text-secondary text-center small mt-auto mb-0 align-self-end"><a href="https://www.napad.pl/produkty-935-15682-ds-2cd2367g3-lis2uy-sl-srb"><strong>Przykład - 64082</strong></a></figcaption>
+                            <figcaption class="my-2 text-secondary text-center small mt-auto mb-0 align-self-end"><a href="https://www.napad.pl/produkty-935-15682-ds-2cd2367g3-lis2uy-sl-srb"><strong>Przykład - 64082</strong></a></figcaption>
                             <img src="cechy_przyklad-1.jpg" class="img-fluid lazy" alt="" loading="lazy" width="500" height="441">
                         </figure>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <figure>
-                           <figcaption class="my-2 text-secondary text-center small"><a href="https://www.napad.pl/produkty-934-15698-ids-2cd7t46g2-vx3-ihsy-kamera-ip-4mpx"><strong>Przykład - 2487</strong></a></figcaption>
+                            <figcaption class="my-2 text-secondary text-center small"><a href="https://www.napad.pl/produkty-934-15698-ids-2cd7t46g2-vx3-ihsy-kamera-ip-4mpx"><strong>Przykład - 2487</strong></a></figcaption>
                             <img src="cechy_przyklad-2.jpg" class="img-fluid lazy" alt="" loading="lazy" width="500" height="441">
                         </figure>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <figure>
-                           <figcaption class="my-2 text-secondary text-center small"><a href="https://www.napad.pl/produkty-1544-15496-ajax-motioncam-highmount-phod-czujnik-ruchu-zewnetrzny"><strong>Przykład - 65693</strong></a></figcaption>
+                            <figcaption class="my-2 text-secondary text-center small"><a href="https://www.napad.pl/produkty-1544-15496-ajax-motioncam-highmount-phod-czujnik-ruchu-zewnetrzny"><strong>Przykład - 65693</strong></a></figcaption>
                             <img src="cechy_przyklad-3.jpg" class="img-fluid lazy" alt="" loading="lazy" width="500" height="441">
                         </figure>
                     </div>
                 </div>
             </div>
         </section>
-        
-        
+
+
         <section class="module-card" id="przykladowe-sekcje">
             <div class="module-header">
-                <h3><span class="mr-2 text-primary">2.3</span>Przykładowe sekcje</h3>
+                <h3><span class="mr-2 text-primary">2.5</span>Przykładowe sekcje</h3>
             </div>
             <div class="module-body">
-               <div class="alert alert-info">
-                   Poniższe sekcje <strong>nie są obowiązkowe</strong> - to tylko przykłady jakie warto byłoby umieścić, ale nie będą miały zastosowania dla każdego produktu. Dla drobnicy też nie ma sensu tego produkować.
-               </div>
+                <div class="alert alert-info">
+                    Poniższe sekcje <strong>nie są obowiązkowe</strong> - to tylko przykłady jakie warto byłoby umieścić, ale nie będą miały zastosowania dla każdego produktu. Dla drobnicy też nie ma sensu tego produkować.
+                </div>
                 <h5 class="">Przykłady:</h5>
                 <ul class="ml-4">
                     <li class="mb-1">zastosowanie (np. lista wymieniająca scenariusze zastosowań)</li>
                     <li class="mb-1">zasada działania (wyjaśniająca np. technologię)</li>
                     <li>dlaczego xxx? (sekcja z argumentacją dlaczego dany produkt jest lepszy od innych)</li>
                 </ul>
-                
+
                 <div class="row mt-0 text-center justify-content-center">
                     <div class="col-12 col-md-6">
                         <figure>
-                           <figcaption class="my-2 text-secondary text-center small mt-auto mb-0 align-self-end"><a href="https://www.napad.pl/produkty-935-15679-ds-2cd3361g2-liuf-2-8mm-kamera-ip-6mpx"><strong>Przykład - 68284</strong></a></figcaption>
+                            <figcaption class="my-2 text-secondary text-center small mt-auto mb-0 align-self-end"><a href="https://www.napad.pl/produkty-935-15679-ds-2cd3361g2-liuf-2-8mm-kamera-ip-6mpx"><strong>Przykład - 68284</strong></a></figcaption>
                             <img src="scenario-1.jpg" class="img-fluid lazy" alt="" loading="lazy" width="500" height="441">
                         </figure>
                     </div>
                     <div class="col-12 col-md-6">
                         <figure>
-                           <figcaption class="my-2 text-secondary text-center small"><a href="https://www.napad.pl/produkty-1544-15496-ajax-motioncam-highmount-phod-czujnik-ruchu-zewnetrzny"><strong>Przykład - 65693</strong></a></figcaption>
+                            <figcaption class="my-2 text-secondary text-center small"><a href="https://www.napad.pl/produkty-1544-15496-ajax-motioncam-highmount-phod-czujnik-ruchu-zewnetrzny"><strong>Przykład - 65693</strong></a></figcaption>
                             <img src="scenario-2.jpg" class="img-fluid lazy" alt="" loading="lazy" width="500" height="441">
                         </figure>
                     </div>
                 </div>
             </div>
         </section>
-        
-        
-         <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;">
+
+
+        <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;"  id="wymiary">
             <h2>3. Wymiary</h2>
         </div>
-         <section class="module-card" id="wymiary">
+        <section class="module-card">
             <div class="module-body">
                 <div class="alert alert-info mb-3">
-                    <p><strong>Wytyczne takie same jak dla obrazków: <a href="#obrazki">czytaj</a></strong>!</p>
+                    <p><strong>Wytyczne takie same jak dla obrazków: <a href="#obrazki">czytaj &rarr;</a></strong></p>
                 </div>
                 <div class="module-grid">
                     <div class="general-note">
-                        <ul class="ml-3">
-                            <li class="mb-2">Wymiary zawsze wpisujemy w kontener <code>&lt;figure&gt;</code>, a podpis umieszczamy w <code>&lt;figcaption&gt;</code></li>
-                            <li class="mb-2">Podpis musi mieć sztywną strukturę kończącą się kropką:<br>
+                        <ul class="ml-4">
+                            <li class="mb-3">Wymiary zawsze wpisujemy w kontener <code>&lt;figure&gt;</code>, a podpis umieszczamy w <code>&lt;figcaption&gt;</code></li>
+                            <li class="mb-3"><code>&lt;img&gt;</code> wsadzamy w <code>&lt;a&gt;</code> - nawet jeśli jest to ta sama grafika - żeby na mobilkach zawsze dało się powiększyć</li>
+                            <li class="mb-3">Podpis musi mieć sztywną strukturę kończącą się kropką:<br>
                                 <code>Wymiary {typ urządzenia} {symbol produktu}.</code>
                             </li>
                             <li>W przypadku kombinacji z różnymi symbolami, zależnie od możliwości jedna z dróg do wyboru według uznania:
@@ -460,12 +536,12 @@
                             <div class="code-header">
                                 <button class="btn-copy mr-0 ml-auto" data-code-id="kod-wymiary">Kopiuj</button>
                             </div>
-                            <pre><code id="kod-wymiary">&lt;figure&gt;
-    &lt;a href="https://www.napad.pl/data/produkty/.../wymiary.jpg" title="Wymiary panelu CP3113"&gt;
+                            <code id="kod-wymiary"><pre>&lt;figure&gt;
+    &lt;a href="https://www.napad.pl/data/produkty/.../wymiary.jpg" &gt;
         &lt;img src="https://www.napad.pl/data/produkty/.../wymiary_500.jpg" class="img-fluid lazy" alt="Wymiary panelu domofonowego CP3113" loading="lazy" width="500" height="441"&gt;
     &lt;/a&gt;
     &lt;figcaption class="mt-2 text-secondary text-center small"&gt;Wymiary panelu domofonowego CP-31113TP / CP-3113R INOX.&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
+&lt;/figure&gt;</pre></code>
                         </div>
                     </div>
                 </div>
@@ -475,9 +551,12 @@
         <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;" id="faq">
             <h2>4. FAQ</h2>
         </div>
-         <section class="module-card" id="faq">
+        <section class="module-card" id="faq">
             <div class="module-body">
-                <ul class="pl-3">
+                <div class="alert alert-info mb-3">
+                    <p><strong>Zasada działania podobna co "pytanie + odpowiedź": <a href="#pytodp">czytaj &rarr;</a></strong></p>
+                </div>
+                <ul class="ml-4">
                     <li class="mb-2">Dajemy tam, gdzie uznajemy to za wartościowe (np. switche, monitory, alarmy). Pomijamy drobnicę.</li>
                     <li class="mb-2">Wstawiamy <strong>w formie nowej zakładki</strong> o nazwie: <strong>FAQ</strong> (bez ikonki i podpowiedzi).</li>
                     <li>Należy powtarzać nazwę produktu w pytaniu i odpowiadać pełnym zdaniem.</li>
@@ -493,7 +572,7 @@
                                 <span>HTML FAQ dla maks. 4 pytań</span>
                                 <button class="btn-copy" data-code-id="kod-faq-short">Kopiuj</button>
                             </div>
-                            <pre><code id="kod-faq-short">
+                            <code id="kod-faq-short"><pre>
 &lt;header&gt;
     &lt;p&gt;Odpowiedzi na najczęściej zadawane pytania dotyczące tego produktu.&lt;/p&gt;
 &lt;/header&gt;
@@ -525,13 +604,31 @@
                 &lt;!-- KONIEC PYTANIE 1 --&gt;
                     
                 &lt;!-- PYTANIE 2 --&gt;
-                ...
+                &lt;div class="card border m-0 px-0 py-1"&gt;
+                    &lt;div class="card-header bg-white px-2 py-1" id="heading-2"&gt;
+                        &lt;button class="btn btn-md btn-link btn-block text-left text-dark p-0 d-flex justify-content-between align-items-center collapsed shadow-none" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2"&gt;
+                            &lt;span class="mr-4"&gt;&lt;i class="fa-regular fa-circle-question d-none d-md-inline-block"&gt;&nbsp;&lt;/i&gt;
+                                PYTANIE 2
+                            &lt;/span&gt;
+                            &lt;span class="text-secondary ml-auto d-flex align-items-center"&gt;
+                                &lt;i class="fa fa-chevron-down faq-toggle-icon"&gt;&lt;/i&gt;
+                            &lt;/span&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                    &lt;div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#productFaqAccordion"&gt;
+                        &lt;div class="card-body text-dark"&gt;
+                            &lt;p class="my-2"&gt;
+                                ODPOWIEDŹ NA PYTANIE 2
+                            &lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
                 &lt;!-- KONIEC PYTANIE 2 --&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/section&gt;
 &lt;/div&gt;
-                            </code></pre>
+                            </pre></code>
                         </div>
                     </div>
 
@@ -542,7 +639,7 @@
                                 <span>HTML FAQ 5 i więcej pytań</span>
                                 <button class="btn-copy" data-code-id="kod-faq-long">Kopiuj</button>
                             </div>
-                            <pre><code id="kod-faq-long">
+                            <code id="kod-faq-long"><pre>
 &lt;header&gt;
     &lt;p&gt;Odpowiedzi na najczęściej zadawane pytania dotyczące tego produktu.&lt;/p&gt;
 &lt;/header&gt;
@@ -591,8 +688,7 @@
         &lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-                            </code>
-                            </pre>
+                            </pre></code>
                         </div>
                         <div class="module-note info mt-2">
                             <p>Wersja dla 5+ ukrywa kolejne pytania i dodaje przycisk do rozwinięcia</p>
@@ -601,23 +697,23 @@
                 </div>
             </div>
         </section>
-        
-        
-         <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;" id="specyfikacja">
+
+
+        <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;" id="specyfikacja">
             <h2>5. Specyfikacja</h2>
         </div>
-             <section class="module-card" id="podzial">
+        <section class="module-card">
             <div class="module-body">
-            <p class="mb-2">
-                Tabelka w specyfikacji z czynników zewnętrznych <strong>nie jest semantyczna</strong> ale taka <strong>musi zostać</strong>.
-            </p>
-             <p class="mb-2">
-                 Natomiast gdy wymieniamy jakieś parametry w ramach jednej grupy to starajmy się używać list (patrz: <a href="#listy" class="text-primary font-weight-bold">1.4 listy</a>).
-             </p>
+                <p class="mb-2">
+                    Tabelka w specyfikacji z czynników zewnętrznych <strong>nie jest semantyczna</strong> (nie ma <code>&lt;thead&gt; / &lt;tbody&gt;</code>) ale taka <strong>musi zostać</strong>.
+                </p>
+                <p class="mb-2">
+                    Gdy wymieniamy jakieś parametry w ramach jednej grupy to starajmy się używać list (patrz: <a href="#listy" class="text-primary font-weight-bold">1.4 listy</a>).
+                </p>
                 <div class="row mt-3 justify-content-start">
 
                     <div class="col-12 col-md-5 mx-3 example-box good">
-                        <h5>DOBRZE:</h5>
+                        <h5 class="mt-3 mb-1">DOBRZE:</h5>
                         <code>&lt;ul class="list-unstyled"&gt;
     &lt;li class="mb-1"&gt;Główny strumień: H.265+ / H.265 / H.264+ / H.264&lt;/li&gt;
     &lt;li class="mb-1"&gt;Pomocniczy strumień: H.265 / H.264 / MJPEG&lt;/li&gt;
@@ -629,18 +725,71 @@
 &lt;/p&gt;</code>
                     </div>
                     <div class="col-12 col-md-5 mx-3 example-box bad">
-                        <h5>ŹLE:</h5>
-                        <code>&lt;p&gt;Główny strumień: H.265+ / H.265 / H.264+ / H.264&lt;/p&gt;
+                        <h5 class="mt-3 mb-1">ŹLE:</h5>
+<code>&lt;p&gt;Główny strumień: H.265+ / H.265 / H.264+ / H.264&lt;/p&gt;
 &lt;p&gt;Pomocniczy strumień: H.265 / H.264 / MJPEG&lt;/p&gt;
 &lt;p&gt;Trzeci strumień*: H.265 / H.264&lt;/p&gt;
 Czwarty strumień*: H.265 / H.264 / MJPEG
-&lt;p class="mb-0"&gt;
-    *Trzeci i czwarty strumień obsługiwany jest tylko w określonych warunkach
-&lt;/p&gt;</code>
+*Trzeci i czwarty strumień obsługiwany jest tylko w warunkach</code>
+                        <hr>
+                        <h5 class="mt-3 mb-1">ŹLE:</h5>
+                        <code>Główny strumień: H.265+ / H.265 / H.264+ / H.264&lt;br&gt;
+Pomocniczy strumień: H.265 / H.264 / MJPEG&lt;br&gt;
+Trzeci strumień*: H.265 / H.264&lt;br&gt;
+Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
+*Trzeci i czwarty strumień obsługiwany jest tylko w warunkach</code>
                     </div>
                 </div>
-                 </div>
+            </div>
         </section>
+        
+        <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;" id="pliki">
+            <h2>6. Pliki - nazewnictwo</h2>
+        </div>
+        <section class="module-card">
+            <div class="module-body">
+                <p>Wrzucając pliki dla produktów, trzymamy się nastepujących zasad co do nazw plików:</p>
+                
+                <ul class="list-unstyled mt-3 mb-0">
+                   
+                    <li class="mb-3">
+                        <h5>&rarr; Producent</h5>
+                        <p>Nazwa ma zawierać nazwę producenta. </p>
+                        <div class="mt-2 example-box neutral small">Wyjątek: gdy nazwa pliku robi się już naprawdę długa</div>
+                    </li>
+                    <li class="mb-3">
+                        <h5>&rarr; Model urządzenia</h5>
+                        <p>Nazwa ma zawierać model danego urządzenia. </p>
+                    </li>
+                    <li class="mb-3">
+                        <h5>&rarr; Typ dokumentu</h5>
+                        <p>Czy jest to instrukcja, karta katalogowa, deklaracja CE itd.</p>
+                    </li>
+                    <li class="mb-3">
+                        <h5>&rarr; Data - jeśli jest</h5>
+                        <p>Niektórzy producenci odgórnie datują swoje pliki, zwłaszcza instrukcje obsługi czy deklaracje CE - <strong>zostawiamy je</strong>.<br>
+                        Może to pomóc w późniejszej weryifkacji czy plik jest aktualny.</p>
+                    </li>
+                </ul>
+                   <div>
+                      <h4>Przykładowe nazwy plików:</h4>
+                       <img src="plik_schemat.jpg" alt="" clas="img-fluid">
+                   </div>
+                <div class="mt-3 alert alert-secondary">
+                    <h5 class="font-weight-bold">Opcjonalnie:</h5>
+                    <p class="mb-0">
+                        Można dopasować typ pliku do języka w którym plik jest, czyli:</p>
+                        <ul class="mt-2 ml-4 mb-0 pb-0">
+                            <li>Karta katalogowa po polsku = <code>PL_Karta-katalogowa</code></li>
+                            <li>Karta katalogowa po angielsku = <code>EN_Datasheet</code></li>
+                            <li>Instrukcja po polsku = <code>PL_Instrukcja-obslugi</code></li>
+                            <li>Instrukcja po angielsku = <code>EN_Manual</code></li>
+                        </ul>
+                    
+                </div>
+            </div>
+        </section>
+        
 
     </main>
     <div id="toast">✅ Skopiowano kod do schowka!</div>

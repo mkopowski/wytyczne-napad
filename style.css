@@ -41,16 +41,6 @@
             transform: scale(1.05);
         }
 
-        .bg-important {
-            background: var(--warn-bg);
-            border-left: 4px solid var(--warn-border);
-        }
-
-        .bg-info {
-            background: var(---bg);
-            border-left: 4px solid var(--warn-border);
-        }
-
         * {
             box-sizing: border-box;
             margin: 0;
@@ -256,22 +246,11 @@
             margin-bottom: 8px;
         }
 
-        .section-label.correct {
-            color: var(--success);
-            font-weight: bold;
-        }
-
-        .section-label.wrong {
-            color: var(--wrong);
-            font-weight: bold;
-        }
-
-
         /* 3. CODE BLOCK */
         .code-box {
             background-color: var(--code-bg);
             border-radius: var(--radius);
-            overflow: hidden;
+            overflow: scroll;
             display: flex;
             flex-direction: column;
             max-height: 420px;
@@ -386,10 +365,5 @@
 
             .module-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .preview-box {
-                height: auto;
-                min-height: 120px;
             }
         }
