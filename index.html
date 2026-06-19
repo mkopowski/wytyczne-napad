@@ -58,7 +58,7 @@
                 <p class="mb-2">Trzymamy się hierarchii nagłówków, czyli h2 -> h3 -> h4 itd..</p>
                 <p class="mb-2"><strong>Nie stosujemy <code>&lt;h1&gt;</code> - może być on tylko jeden na stronę, a u nas to jest nazwa produktu nad ceną.</strong></p>
                 <p class="mb-2">Główne nagłowki dla każdej sekcji powinny być w <code>&lt;h2&gt;</code> - może być ich dowolna ilość.</p>
-                <p class="mb-2">Jeśli w ramach sekcji chcemy kolejne nagłówki w kolejnych zagnieżdżeniach, to schodzimy w dół do <code>&lt;h3&gt;</code>, głębiej <code>&lt;h4&gt;</code> itd. <code>&lt;h4&gt;</code>.
+                <p class="mb-2">Jeśli w ramach sekcji chcemy kolejne nagłówki w kolejnych zagnieżdżeniach, to schodzimy w dół do <code>&lt;h3&gt;</code>, głębiej <code>&lt;h4&gt;</code> itd..
                 <p>Przypominam o istnieniu klas <span class="text-primary"> .h1</span> - <span class="text-primary"> .h6</span> - jeśli chcecie h3 wielkości h2 to wtedy dajemy <code>&lt;h3 class="h2"&gt;</code> itd.</p>
             </div>
         </section>
@@ -132,7 +132,7 @@
                     <ul class="my-2 ml-4">
                         <li>klasę <span class="text-primary"> .lazy</span></li>
                         <li>atrybut <code class="text-dark">loading="lazy"</code></li>
-                        <li>atrybuty wymiarów <code class="text-dark">width="..." height="..."</code></li>
+                        <li>atrybuty wymiarów <code class="text-dark">width="..." height="..."</code> <strong>- prawdziwe wymiary obrazka!!!</strong></li>
                         <li>atrybut <code class="text-dark">alt="..."</code> który opisuje co jest na obrazku, np. "Porty rejestratora DS-7608NXI-K1/VPro.")</li>
                     </ul>
                 </div>
@@ -573,6 +573,7 @@
         &lt;div class="row col-12 mx-auto my-0 p-0"&gt;
             &lt;div class="accordion col-sm-12 m-0 p-0"&gt;
             
+               &lt;!-- PYTANIE 1 --&gt;
                 &lt;div class="card border m-0 px-0 py-1" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"&gt;
                     &lt;div class="card-header bg-white px-2 py-1" id="heading-1"&gt;
                         &lt;button class="btn btn-md btn-link btn-block text-left text-dark p-0 d-flex justify-content-between align-items-center collapsed shadow-none" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1"&gt;
@@ -591,6 +592,9 @@
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
+                &lt;!-- KONIEC PYTANIE 1 --&gt;
+                
+                &lt;!-- PYTANIE 2 --&gt;
                 &lt;div class="card border m-0 px-0 py-1" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"&gt;
                     &lt;div class="card-header bg-white px-2 py-1" id="heading-2"&gt;
                         &lt;button class="btn btn-md btn-link btn-block text-left text-dark p-0 d-flex justify-content-between align-items-center collapsed shadow-none" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2"&gt;
@@ -609,7 +613,13 @@
                         &lt;/div&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
-                &lt;/div&gt;
+                &lt;!-- KONIEC PYTANIE 2 --&gt;
+                
+                &lt;!-- PYTANIE 3 --&gt;
+                    ....
+                &lt;!-- KONIEC PYTANIE 3 --&gt;
+                
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/section&gt;
 &lt;/div&gt;</pre></code>
@@ -633,6 +643,7 @@
             &lt;div class="row col-12 mx-auto my-0 p-0"&gt;
                 &lt;div class="accordion col-sm-12 m-0 p-0"&gt;
 
+                    &lt;!-- PYTANIE 1 --&gt;
                     &lt;div class="card border m-0 px-0 py-1" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"&gt;
                         &lt;div class="card-header bg-white px-2 py-1" id="heading-1"&gt;
                             &lt;button class="btn btn-md btn-link btn-block text-left text-dark p-0 d-flex justify-content-between align-items-center collapsed shadow-none" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1"&gt;
@@ -651,6 +662,9 @@
                             &lt;/div&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
+                    &lt;!-- KONIEC PYTANIE 1 --&gt;
+                    
+                    &lt;!-- PYTANIE 2 --&gt;
                     &lt;div class="card border m-0 px-0 py-1" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"&gt;
                         &lt;div class="card-header bg-white px-2 py-1" id="heading-2"&gt;
                             &lt;button class="btn btn-md btn-link btn-block text-left text-dark p-0 d-flex justify-content-between align-items-center collapsed shadow-none" type="button" data-toggle="collapse" data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2"&gt;
@@ -669,7 +683,13 @@
                             &lt;/div&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
-                    &lt;/div&gt;
+                    &lt;!-- KONIEC PYTANIE 2 --&gt;
+                    
+                    &lt;!-- KONIEC PYTANIE 3 --&gt;
+                        ...
+                    &lt;!-- KONIEC PYTANIE 3 --&gt;
+                    
+                &lt;/div&gt;
             &lt;/div&gt;
         &lt;/section&gt;
     &lt;/div&gt;
