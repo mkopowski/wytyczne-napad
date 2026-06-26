@@ -138,6 +138,8 @@
         }
 
 
+
+
         /* --- STRUKTURA MODUŁU --- */
         .module-card {
             background: var(--bg-card);
@@ -317,6 +319,35 @@
             white-space: pre;
             line-height: 1.4;
         }
+
+.btn-kopiuj {
+    background: #FFF;
+    border: 1px solid #0095ff;
+    border-radius: 6px;
+    padding: 6px 8px;
+    color: #0095ff;
+    margin: 3px;
+}
+
+.btn-kopiuj:hover {
+    background: #0095ff;
+    color: #FFF;
+}
+
+.btn-kopiuj:active {
+    background: #00518a;
+}
+
+#linki-do-producentow {
+    justify-content: center;
+    text-align: center;
+}
+
+#linki-do-producentow > div.kopia-kontener {
+    margin: 0 12px 0;
+    display: inline-block;
+}
+
 
 
         /* --- TOAST NOTIFICATION --- */
