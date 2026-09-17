@@ -41,6 +41,7 @@
             <li class="mt-2"><a href="#faq"><span class="numeracja">4.</span> FAQ</a></li>
             <li class="mt-2"><a href="#specyfikacja"><span class="numeracja">5.</span> Specyfikacja</a></li>
             <li class="mt-2"><a href="#pliki"><span class="numeracja">6.</span> Pliki - nazewnictwo</a></li>
+            <li class="mt-2"><a href="#tooltipy"><span class="numeracja">7.</span> Tooltipy</a></li>
             <hr>
             <li class="mt-1"><a href="#linki-do-producentow">Linki do producentów</a></li>
             <li class="mt-1"><a href="#klasy-ip-ik">Klasy IP i IK</a></li>
@@ -815,6 +816,79 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                 </div>
             </div>
         </section>
+         
+         
+         <div class="main-header mt-5 bg-dark text-white" style="border-bottom:1px solid #ddd;" id="tooltipy">
+            <h2>7. Tooltipy</h2>
+        </div>
+        <section class="module-card">
+            <div class="module-body">
+                <p>Tooltipy wstawiany na 3 sposoby:</p>
+                <h4 class="mt-3">Ikonka (i):</h4>
+                <div class="code-box">
+                            <div class="code-header">
+                                <span>Ikonka (i)</span>
+                                <button class="btn-copy" data-code-id="tooltip_i">Kopiuj</button>
+                            </div>
+                            <code id="tooltip_i"><pre>&lt;button
+    type="button" 
+    class="btn-tooltip" 
+    data-toggle="tooltip" 
+    data-tooltip-custom-classes="product-tooltip-bullet"
+    data-placement="top" 
+    data-html="true" 
+    aria-label="Opis tooltipa (np. Więcej informacji o rozdzielczości)"
+    title="Opis..."&gt;
+
+    &lt;i class="las la-info-circle" aria-hidden="true"&gt;&lt;/i&gt;
+&lt;/button&gt;</pre></code>
+                </div>
+                
+                <h4 class="mt-3">Tekst bez linku: <small class="text-muted">np. IP / IK  w skróconym</small></h4>
+                <div class="code-box">
+                            <div class="code-header">
+                                <span>Ikonka (i)</span>
+                                <button class="btn-copy" data-code-id="tooltip_tekstbezlinka">Kopiuj</button>
+                            </div>
+                            <code id="tooltip_tekstbezlinka"><pre>&lt;button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Opis..."&gt;
+    Tekst
+&lt;/button&gt;</pre></code>
+                </div>
+                
+                <h4 class="mt-3">Tekst z linkiem: <small class="text-muted">np. IP / IK  w rozszerzonym</small></h4>
+                <div class="code-box">
+                            <div class="code-header">
+                                <span>Ikonka (i)</span>
+                                <button class="btn-copy" data-code-id="tooltip_tekstlink">Kopiuj</button>
+                            </div>
+                            <code id="tooltip_tekstlink"><pre>&lt;a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="- ochrona pyłoszczelna;&lt;br&gt;- ochrona przed dostępem do części niebezpiecznych drutem;&lt;br&gt;- ochrona przed skutkami krótkotrwałego zanurzenia w wodzie (30 min na głębokość 0,15 m powyżej wierzchu obudowy lub 1 m powyżej spodu dla obudów niższych niż 0,85 m)"&gt;IP67&lt;/a&gt;
+</pre></code>
+                </div>
+            </div>
+            <div class="module-body mt-4">
+                <h4><strong>Ważne informacje:</strong></h4>
+                <p>&bull; W tooltipach z ikonką jest taki parametr: <strong>data-tooltip-custom-classes="product-tooltip-bullet"</strong><br>
+                Zmienia on kolor dymka z domyślnego niebieskiego na "szary". Domyślny <u><strong>niebieski jest zarezerwowany dla dymków IP oraz IK!</strong></u><br>
+                 Gdy nie ma tego parametru, button musi mieć klasę <span class="text-primary">text-primary</span> (bo inaczej będzie szary tekst)</p>
+                 
+                  <p class="mt-3">&bull; Opis tooltipa w  <strong>aria-label="..."</strong> musi być konkretny!<br>
+Tutaj musi być opis tooltipa - nie może to być puste, ani nie może być ogólnikowe.<br>
+Musi opisywać konkretny tooltip. Czyli nie “Więcej informacji” a “Więcej informacji o Smart Hybrid Light”, “Więcej informacji o klasie szczelności” itd.
+</p>
+            </div>
+        </section>
+         
 
          <section id="linki-do-producentow" class="module-box py-4">
              <section class="module-card">
@@ -885,19 +959,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IP 20</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych palcem; ochrona przed obcymi ciałami stałymi o średnicy 12,5 mm i większej; brak ochrony przed wodą." class="text-primary cursor-pointer">IP20</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Ochrona przed dostępem do części niebezpiecznych palcem; ochrona przed obcymi ciałami stałymi o średnicy 12,5 mm i większej; brak ochrony przed wodą.">
+    IP20
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych palcem; ochrona przed obcymi ciałami stałymi o średnicy 12,5 mm i większej; brak ochrony przed wodą.">IP20</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="Ochrona przed dostępem do części niebezpiecznych palcem; ochrona przed obcymi ciałami stałymi o średnicy 12,5 mm i większej; brak ochrony przed wodą.">IP20</a>
                     </div>
                 </div>
 
@@ -905,19 +990,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IP 30</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych narzędziem; ochrona przed obcymi ciałami stałymi o średnicy 2,5 mm i większej; brak ochrony przed wodą." class="text-primary cursor-pointer">IP30</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Ochrona przed dostępem do części niebezpiecznych narzędziem; ochrona przed obcymi ciałami stałymi o średnicy 2,5 mm i większej; brak ochrony przed wodą.">
+    IP30
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych narzędziem; ochrona przed obcymi ciałami stałymi o średnicy 2,5 mm i większej; brak ochrony przed wodą.">IP30</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="Ochrona przed dostępem do części niebezpiecznych narzędziem; ochrona przed obcymi ciałami stałymi o średnicy 2,5 mm i większej; brak ochrony przed wodą.">IP30</a>
                     </div>
                 </div>
 
@@ -925,19 +1021,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IP 40</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; brak ochrony przed wodą." class="text-primary cursor-pointer">IP40</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; brak ochrony przed wodą.">
+    IP40
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; brak ochrony przed wodą.">IP40</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; brak ochrony przed wodą.">IP40</a>
                     </div>
                 </div>
 
@@ -945,19 +1052,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IP 43</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; ochrona przed natryskiwaniem wodą pod dowolnym kątem do 60° od pionu z każdej strony." class="text-primary cursor-pointer">IP43</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; ochrona przed natryskiwaniem wodą pod dowolnym kątem do 60° od pionu z każdej strony.">
+    IP43
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; ochrona przed natryskiwaniem wodą pod dowolnym kątem do 60° od pionu z każdej strony">IP43</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed obcymi ciałami stałymi o średnicy 1 mm i większej; ochrona przed natryskiwaniem wodą pod dowolnym kątem do 60° od pionu z każdej strony">IP43</a>
                     </div>
                 </div>
 
@@ -965,19 +1083,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IP 50</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; brak ochrony przed wodą." class="text-primary cursor-pointer">IP50</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; brak ochrony przed wodą.">
+    IP50
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; brak ochrony przed wodą.">IP50</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; brak ochrony przed wodą.">IP50</a>
                     </div>
                 </div>
 
@@ -985,19 +1114,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IP 54</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed bryzgami wody z dowolnego kierunku." class="text-primary cursor-pointer">IP54</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed bryzgami wody z dowolnego kierunku.">
+    IP54
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed bryzgami wody z dowolnego kierunku.">IP54</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed bryzgami wody z dowolnego kierunku.">IP54</a>
                     </div>
                 </div>
 
@@ -1005,19 +1145,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IP 55</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed strugą wody (12,5 l/min) laną na obudowę z dowolnej strony." class="text-primary cursor-pointer">IP55</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed strugą wody (12,5 l/min) laną na obudowę z dowolnej strony.">
+    IP55
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed strugą wody (12,5 l/min) laną na obudowę z dowolnej strony.">IP55</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="Ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed pyłem; ochrona przed strugą wody (12,5 l/min) laną na obudowę z dowolnej strony.">IP55</a>
                     </div>
                 </div>
 
@@ -1025,19 +1176,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IP 65</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed kroplami padającymi pod dowolnym kątem, ze wszystkich stron." class="text-primary cursor-pointer">IP65</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed kroplami padającymi pod dowolnym kątem, ze wszystkich stron.">
+    IP65
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed kroplami padającymi pod dowolnym kątem, ze wszystkich stron.">IP65</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed kroplami padającymi pod dowolnym kątem, ze wszystkich stron.">IP65</a>
                     </div>
                 </div>
 
@@ -1045,19 +1207,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IP 66</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Ochrona pyłoszczelna i przed dostępem do części niebezpiecznych drutem; ochrona przed silną strugą wody (100 l/min) laną na obudowę z dowolnej strony." class="text-primary cursor-pointer">IP66</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Ochrona pyłoszczelna i przed dostępem do części niebezpiecznych drutem; ochrona przed silną strugą wody (100 l/min) laną na obudowę z dowolnej strony.">
+    IP66
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Ochrona pyłoszczelna i przed dostępem do części niebezpiecznych drutem; ochrona przed silną strugą wody (100 l/min) laną na obudowę z dowolnej strony.">IP66</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="Ochrona pyłoszczelna i przed dostępem do części niebezpiecznych drutem; ochrona przed silną strugą wody (100 l/min) laną na obudowę z dowolnej strony.">IP66</a>
                     </div>
                 </div>
 
@@ -1065,19 +1238,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IP 67</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami krótkotrwałego zanurzenia w wodzie (30 min na głębokość 0,15 m powyżej wierzchu obudowy lub 1 m powyżej spodu dla obudów niższych niż 0,85 m)." class="text-primary cursor-pointer">IP67</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami krótkotrwałego zanurzenia w wodzie (30 min na głębokość 0,15 m powyżej wierzchu obudowy lub 1 m powyżej spodu dla obudów niższych niż 0,85 m).">
+    IP67
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami krótkotrwałego zanurzenia w wodzie (30 min na głębokość 0,15 m powyżej wierzchu obudowy lub 1 m powyżej spodu dla obudów niższych niż 0,85 m).">IP67</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami krótkotrwałego zanurzenia w wodzie (30 min na głębokość 0,15 m powyżej wierzchu obudowy lub 1 m powyżej spodu dla obudów niższych niż 0,85 m).">IP67</a>
                     </div>
                 </div>
 
@@ -1085,19 +1269,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IP 68</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami ciągłego zanurzenia w wodzie (obudowa ciągle zanurzona w wodzie, w warunkach uzgodnionych między producentem i użytkownikiem, lecz surowszych niż według cyfry 7)" class="text-primary cursor-pointer">IP68</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji klasie szczelności"
+   title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami ciągłego zanurzenia w wodzie (obudowa ciągle zanurzona w wodzie, w warunkach uzgodnionych między producentem i użytkownikiem, lecz surowszych niż według cyfry 7).">
+    IP68
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip" target="_blank" data-original-title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami ciągłego zanurzenia w wodzie (obudowa ciągle zanurzona w wodzie, w warunkach uzgodnionych między producentem i użytkownikiem, lecz surowszych niż według cyfry 7)">IP68</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-wodoszczelnosci-kamer-ip"
+target="_blank"
+title="Całkowita ochrona przed wnikaniem pyłu; ochrona przed dostępem do części niebezpiecznych drutem; ochrona przed skutkami ciągłego zanurzenia w wodzie (obudowa ciągle zanurzona w wodzie, w warunkach uzgodnionych między producentem i użytkownikiem, lecz surowszych niż według cyfry 7).">IP68</a>
                     </div>
                 </div>
             </div>
@@ -1108,19 +1303,31 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IK 01</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="Odporność na udar o energii 0,15 J (upadek obiektu o wadze 200 g z wysokości 7,5 cm)" class="text-primary cursor-pointer">IK01</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji ochronie mechanicznej."
+   title="Odporność na udar o energii 0,15 J (upadek obiektu o wadze 200 g z wysokości 7,5 cm).">
+    IK01
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 0,15 J (upadek obiektu o wadze 200 g z wysokości 7,5 cm)." class="text-primary">IK01</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer"
+target="_blank"
+title="Odporność na udar o energii 0,15 J (upadek obiektu o wadze 200 g z wysokości 7,5 cm).">IK01</a>
+                       
                     </div>
                 </div>
 
@@ -1128,19 +1335,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IK 02</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="Odporność na udar o energii 0,2 J (upadek obiektu o wadze 200 g z wysokości 10 cm)" class="text-primary cursor-pointer">IK02</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji ochronie mechanicznej."
+   title="Odporność na udar o energii 0,2 J (upadek obiektu o wadze 200 g z wysokości 10 cm).">
+    IK02
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 0,2 J (upadek obiektu o wadze 200 g z wysokości 10 cm)." class="text-primary">IK02</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer"
+target="_blank"
+title="Odporność na udar o energii 0,2 J (upadek obiektu o wadze 200 g z wysokości 10 cm).">IK02</a>
                     </div>
                 </div>
 
@@ -1148,39 +1366,61 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IK 03</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="Odporność na udar o energii 0,35 J (upadek obiektu o wadze 200 g z wysokości 17,5 cm)" class="text-primary cursor-pointer">IK03</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji ochronie mechanicznej."
+   title="Odporność na udar o energii 0,35 J (upadek obiektu o wadze 200 g z wysokości 17,5 cm).">
+    IK03
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 0,35 J (upadek obiektu o wadze 200 g z wysokości 17,5 cm)." class="text-primary">IK03</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer"
+target="_blank"
+title="Odporność na udar o energii 0,35 J (upadek obiektu o wadze 200 g z wysokości 17,5 cm).">IK03</a>
                     </div>
                 </div>
 
                 <div class="row col-sm-1 m-1 pt-1 pb-0 px-0 bg-white border border-dark rounded-050">
                     <h4 class="col-12 text-center mb-0">IK 04</h4>
                     <div class="col-6 text-center kopia-kontener">
-                        <p class="mb-1">Skr</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <p class="small mb-0">Skr:</p>
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="Odporność na udar o energii 0,5 J (upadek obiektu o wadze 200 g z wysokości 25 cm)" class="text-primary cursor-pointer">IK04</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji ochronie mechanicznej."
+   title="Odporność na udar o energii 0,5 J (upadek obiektu o wadze 200 g z wysokości 25 cm).">
+    IK04
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
-                        <p class="mb-1">Roz</p>
+                        <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 0,5 J (upadek obiektu o wadze 200 g z wysokości 25 cm)." class="text-primary">IK04</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer"
+target="_blank"
+title="Odporność na udar o energii 0,5 J (upadek obiektu o wadze 200 g z wysokości 25 cm).">IK04</a>
                     </div>
                 </div>
 
@@ -1188,19 +1428,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IK 05</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="odporność na udar o energii 0,7 J (upadek obiektu o wadze 200 g z wysokości 35 cm)" class="text-primary cursor-pointer">IK05</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji ochronie mechanicznej."
+   title="Odporność na udar o energii 0,7 J (upadek obiektu o wadze 200 g z wysokości 35 cm).">
+    IK05
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 0,7 J (upadek obiektu o wadze 200 g z wysokości 35 cm)." class="text-primary">IK05</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer"
+target="_blank"
+title="Odporność na udar o energii 0,7 J (upadek obiektu o wadze 200 g z wysokości 35 cm).">IK05</a>
                     </div>
                 </div>
 
@@ -1208,19 +1459,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IK 06</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="odporność na udar o energii 1 J (upadek obiektu o wadze 500 g z wysokości 20 cm)" class="text-primary cursor-pointer">IK06</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji ochronie mechanicznej."
+   title="Odporność na udar o energii 1 J (upadek obiektu o wadze 500 g z wysokości 20 cm).">
+    IK06
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 1 J (upadek obiektu o wadze 500 g z wysokości 20 cm)." class="text-primary">IK06</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer"
+target="_blank"
+title="Odporność na udar o energii 1 J (upadek obiektu o wadze 500 g z wysokości 20 cm).">IK06</a>
                     </div>
                 </div>
 
@@ -1228,19 +1490,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IK 07</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="odporność na udar o energii 2 J (upadek obiektu o wadze 500 g z wysokości 40 cm)" class="text-primary cursor-pointer">IK07</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji ochronie mechanicznej."
+   title="Odporność na udar o energii 2 J (upadek obiektu o wadze 500 g z wysokości 40 cm).">
+    IK07
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 2 J (upadek obiektu o wadze 500 g z wysokości 40 cm)." class="text-primary">IK07</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer"
+target="_blank"
+title="Odporność na udar o energii 2 J (upadek obiektu o wadze 500 g z wysokości 40 cm).">IK07</a>
                     </div>
                 </div>
 
@@ -1248,19 +1521,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IK 08</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" title="" target="_blank" data-original-title="Odporność na udar o energii 5 J (upadek obiektu o wadze 1,7 kg z wysokości 29,5 cm)." class="text-primary cursor-pointer">IK08</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji ochronie mechanicznej."
+   title="Odporność na udar o energii 5 J (upadek obiektu o wadze 1,7 kg z wysokości 29,5 cm).">
+    IK08
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 5 J (upadek obiektu o wadze 1,7 kg z wysokości 29,5 cm)." class="text-primary">IK08</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer"
+target="_blank"
+title="Odporność na udar o energii 5 J (upadek obiektu o wadze 1,7 kg z wysokości 29,5 cm).">IK08</a>
                     </div>
                 </div>
 
@@ -1268,19 +1552,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IK 09</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" data-placement="top" data-html="true" target="_blank" data-original-title="Odporność na udar o energii 10 J (upadek obiektu o wadze 5 kg z wysokości 20 cm)." class="text-primary cursor-pointer">IK09</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji ochronie mechanicznej."
+   title="Odporność na udar o energii 10 J (upadek obiektu o wadze 5 kg z wysokości 20 cm).">
+    IK09
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="Odporność na udar o energii 10 J (upadek obiektu o wadze 5 kg z wysokości 20 cm).">IK09</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer"
+target="_blank"
+title="Odporność na udar o energii 10 J (upadek obiektu o wadze 5 kg z wysokości 20 cm).">IK09</a>
                     </div>
                 </div>
 
@@ -1288,19 +1583,30 @@ Czwarty strumień*: H.265 / H.264 / MJPEG&lt;br&gt;
                     <h4 class="col-12 text-center mb-0">IK 10</h4>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Skr:</p>
-                        <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="span" data-kopiuj-typ="outer">
+                        <a class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="button" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
-                        </button>
-
-                        <span data-toggle="tooltip" class="text-primary cursor-pointer" data-placement="top" data-html="true" data-original-title="- odporność na udar o energii 20 J (upadek obiektu o wadze 5 kg z wysokości 40 cm)">IK10</span>
+                        </a>
+                        <button type="button" 
+   class="btn-tooltip text-primary" 
+   data-toggle="tooltip" 
+   data-placement="top" 
+   data-html="true" 
+   aria-label="Więcej informacji ochronie mechanicznej."
+   title="Odporność na udar o energii 20 J (upadek obiektu o wadze 5 kg z wysokości 40 cm).">
+    IK10
+</button>
                     </div>
                     <div class="col-6 text-center kopia-kontener">
                         <p class="small mb-0">Roz:</p>
                         <button class="btn-kopiuj mb-0" data-kopiuj-trigger data-kopiuj-cel="a" data-kopiuj-typ="outer">
                             <i class="far fa-copy"></i>
                         </button>
-
-                        <a data-toggle="tooltip" data-placement="top" data-html="true" title="" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer" target="_blank" data-original-title="- odporność na udar o energii 20 J (upadek obiektu o wadze 5 kg z wysokości 40 cm)">IK10</a>
+<a
+data-toggle="tooltip"
+data-placement="top"
+data-html="true" href="https://www.napad.pl/artykuly/telewizja-przemyslowa/klasyfikacja-ik-wandaloodpornosci-kamer"
+target="_blank"
+title="Odporność na udar o energii 20 J (upadek obiektu o wadze 5 kg z wysokości 40 cm).">IK10</a>
                     </div>
                 </div>
             </div>
