@@ -338,6 +338,11 @@
     background: #00518a;
 }
 
+a.btn-kopiuj:hover{cursor:pointer}
+a.btn-kopiuj > i {margin:12px 0;}
+
+button[data-toggle="tooltip"] {background:none;border:none;}
+
 #linki-do-producentow {
     justify-content: center;
     text-align: center;
